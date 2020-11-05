@@ -11,6 +11,7 @@ StudentAI::StudentAI(int col,int row,int p)
     player = 2;
 }
 
+//Test- Ludo
 Move StudentAI::GetMove(Move move)
 {
     if (move.seq.empty())
