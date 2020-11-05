@@ -1,3 +1,3 @@
-/home/mwiesent/cs171/checkers_cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/mwiesent/cs171/checkers_cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/mwiesent/cs171/checkers_cpp/cmake-build-debug/CMakeFiles/Checker_Teacher.dir
+/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/CMakeFiles/Checker_Teacher.dir

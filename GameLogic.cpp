@@ -1,5 +1,5 @@
 #include "GameLogic.h"
-
+//Test: Ludo
 GameLogic::GameLogic(int col, int row, int p, string mode,int order)
 {
 	this->col = col;

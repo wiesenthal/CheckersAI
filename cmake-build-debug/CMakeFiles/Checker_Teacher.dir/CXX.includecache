@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/mwiesent/cs171/checkers_cpp/AI.h
+/Users/ludovico/CLionProjects/CheckersAI/AI.h
 Move.h
-/home/mwiesent/cs171/checkers_cpp/Move.h
+/Users/ludovico/CLionProjects/CheckersAI/Move.h
 Board.h
-/home/mwiesent/cs171/checkers_cpp/Board.h
+/Users/ludovico/CLionProjects/CheckersAI/Board.h
 
-/home/mwiesent/cs171/checkers_cpp/Board.cpp
+/Users/ludovico/CLionProjects/CheckersAI/Board.cpp
 Board.h
-/home/mwiesent/cs171/checkers_cpp/Board.h
+/Users/ludovico/CLionProjects/CheckersAI/Board.h
 
-/home/mwiesent/cs171/checkers_cpp/Board.h
+/Users/ludovico/CLionProjects/CheckersAI/Board.h
 vector
 -
 iomanip
@@ -28,17 +28,17 @@ map
 set
 -
 Move.h
-/home/mwiesent/cs171/checkers_cpp/Move.h
+/Users/ludovico/CLionProjects/CheckersAI/Move.h
 Checker.h
-/home/mwiesent/cs171/checkers_cpp/Checker.h
+/Users/ludovico/CLionProjects/CheckersAI/Checker.h
 
-/home/mwiesent/cs171/checkers_cpp/Checker.cpp
+/Users/ludovico/CLionProjects/CheckersAI/Checker.cpp
 Checker.h
-/home/mwiesent/cs171/checkers_cpp/Checker.h
+/Users/ludovico/CLionProjects/CheckersAI/Checker.h
 Board.h
-/home/mwiesent/cs171/checkers_cpp/Board.h
+/Users/ludovico/CLionProjects/CheckersAI/Board.h
 
-/home/mwiesent/cs171/checkers_cpp/Checker.h
+/Users/ludovico/CLionProjects/CheckersAI/Checker.h
 vector
 -
 map
@@ -48,39 +48,39 @@ string
 set
 -
 Utils.h
-/home/mwiesent/cs171/checkers_cpp/Utils.h
+/Users/ludovico/CLionProjects/CheckersAI/Utils.h
 Move.h
-/home/mwiesent/cs171/checkers_cpp/Move.h
+/Users/ludovico/CLionProjects/CheckersAI/Move.h
 
-/home/mwiesent/cs171/checkers_cpp/GameLogic.cpp
+/Users/ludovico/CLionProjects/CheckersAI/GameLogic.cpp
 GameLogic.h
-/home/mwiesent/cs171/checkers_cpp/GameLogic.h
+/Users/ludovico/CLionProjects/CheckersAI/GameLogic.h
 
-/home/mwiesent/cs171/checkers_cpp/GameLogic.h
+/Users/ludovico/CLionProjects/CheckersAI/GameLogic.h
 AI.h
-/home/mwiesent/cs171/checkers_cpp/AI.h
+/Users/ludovico/CLionProjects/CheckersAI/AI.h
 Board.h
-/home/mwiesent/cs171/checkers_cpp/Board.h
+/Users/ludovico/CLionProjects/CheckersAI/Board.h
 StudentAI.h
-/home/mwiesent/cs171/checkers_cpp/StudentAI.h
+/Users/ludovico/CLionProjects/CheckersAI/StudentAI.h
 ManualAI.h
-/home/mwiesent/cs171/checkers_cpp/ManualAI.h
+/Users/ludovico/CLionProjects/CheckersAI/ManualAI.h
 
-/home/mwiesent/cs171/checkers_cpp/ManualAI.cpp
+/Users/ludovico/CLionProjects/CheckersAI/ManualAI.cpp
 ManualAI.h
-/home/mwiesent/cs171/checkers_cpp/ManualAI.h
+/Users/ludovico/CLionProjects/CheckersAI/ManualAI.h
 iostream
 -
 
-/home/mwiesent/cs171/checkers_cpp/ManualAI.h
+/Users/ludovico/CLionProjects/CheckersAI/ManualAI.h
 AI.h
-/home/mwiesent/cs171/checkers_cpp/AI.h
+/Users/ludovico/CLionProjects/CheckersAI/AI.h
 
-/home/mwiesent/cs171/checkers_cpp/Move.cpp
+/Users/ludovico/CLionProjects/CheckersAI/Move.cpp
 Move.h
-/home/mwiesent/cs171/checkers_cpp/Move.h
+/Users/ludovico/CLionProjects/CheckersAI/Move.h
 
-/home/mwiesent/cs171/checkers_cpp/Move.h
+/Users/ludovico/CLionProjects/CheckersAI/Move.h
 vector
 -
 string
@@ -88,25 +88,25 @@ string
 iostream
 -
 Utils.h
-/home/mwiesent/cs171/checkers_cpp/Utils.h
+/Users/ludovico/CLionProjects/CheckersAI/Utils.h
 
-/home/mwiesent/cs171/checkers_cpp/StudentAI.cpp
+/Users/ludovico/CLionProjects/CheckersAI/StudentAI.cpp
 StudentAI.h
-/home/mwiesent/cs171/checkers_cpp/StudentAI.h
+/Users/ludovico/CLionProjects/CheckersAI/StudentAI.h
 random
 -
 
-/home/mwiesent/cs171/checkers_cpp/StudentAI.h
+/Users/ludovico/CLionProjects/CheckersAI/StudentAI.h
 AI.h
-/home/mwiesent/cs171/checkers_cpp/AI.h
+/Users/ludovico/CLionProjects/CheckersAI/AI.h
 Board.h
-/home/mwiesent/cs171/checkers_cpp/Board.h
+/Users/ludovico/CLionProjects/CheckersAI/Board.h
 
-/home/mwiesent/cs171/checkers_cpp/Utils.cpp
+/Users/ludovico/CLionProjects/CheckersAI/Utils.cpp
 Utils.h
-/home/mwiesent/cs171/checkers_cpp/Utils.h
+/Users/ludovico/CLionProjects/CheckersAI/Utils.h
 
-/home/mwiesent/cs171/checkers_cpp/Utils.h
+/Users/ludovico/CLionProjects/CheckersAI/Utils.h
 exception
 -
 vector
@@ -116,7 +116,7 @@ map
 string
 -
 
-/home/mwiesent/cs171/checkers_cpp/main.cpp
+/Users/ludovico/CLionProjects/CheckersAI/main.cpp
 GameLogic.h
-/home/mwiesent/cs171/checkers_cpp/GameLogic.h
+/Users/ludovico/CLionProjects/CheckersAI/GameLogic.h
 
