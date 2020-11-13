@@ -34,3 +34,4 @@ Move StudentAI::GetMove(Move move)
 Node::Node(Board board1, Node * parent1) : board() : parent(parent1)
 {}
 
+//alksdjf;alsdkjf;laskj;
