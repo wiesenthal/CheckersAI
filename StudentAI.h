@@ -13,7 +13,7 @@ using namespace std;
 class Node {
     public:
         Node(Board, Node *);
-        Board board;
+        Board * board;
         Node * parent;
         vector<Node *> children;
         double winValue;
@@ -35,7 +35,7 @@ public:
 
     Board * getBoard(const Board &, const Move &, const int); // make an action, returns new board
     float getUCBValue(const Node *); //get the UCB value of one board state
-    float simulate(const Node *); // rollout from a leaf node to get to the end with random nodes
+    float simulate(const Node *, const int); // rollout from a leaf node to get to the end with random nodes
     void backpropogate(Node *, float); // update values from the leaf node up, given the value returned by simulate
 
 
