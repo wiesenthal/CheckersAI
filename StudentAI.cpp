@@ -120,12 +120,15 @@ Node * StudentAI::select(Node * node) {
     }
 
     //Expand tree
+    bool isRoot = node->parent == nullptr;
     vector<vector<Move>> moves = node->board->getAllPossibleMoves(node->player);
     int newPlayer = node->player == 1 ? 2 : 1;
     for (int i = 0;  i < moves.size(); i++) {
         for (int j = 0; j < moves[i].size(), j++){
             Board * newBoard = getBoard(*(node->board), moves[i][j], node->player);
-            Node * newNode = new Node(newBoard, node, newPlayer, moves[i][j]);
+            Node * newNode = new Node(newBoard, node, newPlayer);
+            if (isRoot)
+                movePath[newNode] = moves[i][j];
             node->children.push_back(newNode);
         }
     }
