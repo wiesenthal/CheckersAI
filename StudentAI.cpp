@@ -31,6 +31,13 @@ Move StudentAI::GetMove(Move move)
 
 }
 
+Board getBoard(const Board & b,const Move & move, const int player) // gets a board
+{
+    Board b2 = b;
+    b2.makeMove(move, player);
+    return b2;
+}
+
 Node::Node(Board board1, Node * parent1) : board() : parent(parent1)
 {}
 
