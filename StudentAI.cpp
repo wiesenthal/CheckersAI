@@ -46,6 +46,7 @@ float StudentAI::simulate(const Node * pickedNode) {
     int currPlayer = pickedNode->player;
     while (board->isWin(currPlayer) != 0) {
         vector<vector<Move>> moves = board->getAllPossibleMoves(currPlayer);
+        // THIS IS NOT TRULY RANDOM, CHANGE SOON
         int i = rand() % (moves.size());
         vector<Move> checker_moves = moves[i];
         int j = rand() % (checker_moves.size());
