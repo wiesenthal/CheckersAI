@@ -94,10 +94,23 @@ Node * StudentAI::select(Node * node) {
     while (!node->children.empty()) {
         node = getMaxUCB(node);
     }
-    return node;
+
+    //Expand tree
+    vector<vector<Move>> moves = node->board->getAllPossibleMoves(node->player);
+    int newPlayer = node->player == 1 ? 2 : 1;
+    for (int i = 0;  i < moves.size(); i++) {
+        for (int j = 0; j < moves[i].size(), j++){
+            Board * newBoard = getBoard(node->board, moves[i][j], node->player);
+            Node * newNode = new Node(newBoard, node, newPlayer);
+            node->children.push_back(newNode);
+        }
+    }
+
+    return getMaxUCB(node);
 }
 
-Node::Node(Board * board1, Node * parent1) : board(board1), parent(parent1)
+Node::Node(Board * board1, Node * parent1, int player1) : board(board1), parent(parent1),
+    winValue(0), visitCount(0), player(player1)
 {}
 
 

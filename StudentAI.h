@@ -12,7 +12,7 @@ using namespace std;
 
 class Node {
     public:
-        Node(Board *, Node *);
+        Node(Board *, Node *, int);
         Board * board;
         Node * parent;
         vector<Node *> children;
