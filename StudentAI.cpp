@@ -83,6 +83,13 @@ Node * StudentAI::getMaxUCB(Node * node) {
     return bestChild;
 }
 
+Node * StudentAI::select(Node * node) {
+    while (!node->children.empty()) {
+        node = getMaxUCB(node);
+    }
+    return node;
+}
+
 Node::Node(Board * board1, Node * parent1) : board(board1), parent(parent1)
 {}
 
