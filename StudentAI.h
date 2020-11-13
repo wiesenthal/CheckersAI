@@ -35,7 +35,12 @@ public:
 	StudentAI(int col, int row, int p);
 	virtual Move GetMove(Move board);
 
-	//Our functions
+	// --- Our functions ---
+
+	Node * chooseBest(Node *); //return node at the end of MCTS to make final move
+	Node * select(Node *); //return node to explore
+	Node * getMaxUCB(Node *); //return child node with highest UCB value
+
 	Board getBoard(const Board &, const Move &, const int);
 	float getUCBValue(const Node *);
 
