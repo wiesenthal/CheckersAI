@@ -50,8 +50,8 @@ float StudentAI::simulate(const Node * pickedNode) {
         vector<Move> checker_moves = moves[i];
         int j = rand() % (checker_moves.size());
         Move pickedMove = checker_moves[j];
-        board->makeMove(pickedMove,currPlayer);
-        currPlayer = currPlayer == 1 ? 2 : 1
+        board->makeMove(pickedMove,player);
+        player = player == 1 ? 2 : 1
     }
 
     int winner = board->isWin(player);
@@ -67,10 +67,10 @@ float StudentAI::getUCBValue(const Node * state) {
     float avgVal = state->winValue / (float) state->visitCount;
     float s = sqrt(log((float)state->parent->visitCount)/(float)state->visitCount);
 
-    return avgVal + exploration*s;
+    return avgVal + (exploration*s);
 }
 
-Node::Node(Board board1, Node * parent1) : board(board1), parent(parent1)
+Node::Node(Board * board1, Node * parent1) : board(board1), parent(parent1)
 {}
 
 
