@@ -56,11 +56,7 @@ float StudentAI::simulate(const Node * pickedNode) {
     }
 
     int winner = board->isWin(player);
-    if (player == winner)
-        return 1;
-    if (winner == -1)
-        return 0.5;
-    return 0;
+    return winner;
 }
 
 float StudentAI::getUCBValue(const Node * state) {
@@ -69,6 +65,17 @@ float StudentAI::getUCBValue(const Node * state) {
     float s = sqrt(log((float)state->parent->visitCount)/(float)state->visitCount);
 
     return avgVal + (exploration*s);
+}
+
+void StudentAI::backpropogate(Node * state, float terminalPlayer) {
+    float score;
+    while (state->parent)
+    {
+        score = 0 + (terminalPlayer == -1)*0.5 + (terminalPlayer == state->player);
+        state->winValue += score;
+        state->visitCount += 1;
+        state = state->parent;
+    }
 }
 
 Node::Node(Board * board1, Node * parent1) : board(board1), parent(parent1)
