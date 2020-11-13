@@ -1,8 +1,17 @@
 #include "StudentAI.h"
 #include <random>
+#include <cmath>
 
 //The following part should be completed by students.
 //The students can modify anything except the class name and exisiting functions and varibles.
+
+Board * getBoard(const Board & b,const Move & move, const int player) // gets a board
+{
+    Board * b2 = new Board(b);
+    b2->makeMove(move, player);
+    return b2;
+}
+
 StudentAI::StudentAI(int col,int row,int p)
 	:AI(col, row, p)
 {
@@ -31,12 +40,15 @@ Move StudentAI::GetMove(Move move)
 
 }
 
-Board * getBoard(const Board & b,const Move & move, const int player) // gets a board
-{
-    Board * b2 = new Board(b);
-    b2->makeMove(move, player);
-    return b2;
+float StudentAI::getUCBValue(const Node * state) {
+    //UCB(State) = averageValue + explorationConstant * sqrt(ln(parentN)/myN)
+    float avgVal = state->winValue / (float) state->visitCount;
+    float s = sqrt(log((float)state->parent->visitCount)/(float)state->visitCount);
+
+    return avgVal + exploration*s;
 }
+
+
 
 Node::Node(Board board1, Node * parent1) : board() : parent(parent1)
 {}
