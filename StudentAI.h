@@ -18,12 +18,13 @@ public:
 };
 
 class Node {
-    Node(Board, Node *);
-    Board board;
-    Node * parent;
-    vector<Node *> children;
-    double winValue;
-    int visitCount;
+    public:
+        Node(Board, Node *);
+        Board board;
+        Node * parent;
+        vector<Node *> children;
+        double winValue;
+        int visitCount;
 
 };
 
