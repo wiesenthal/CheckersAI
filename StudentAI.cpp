@@ -36,8 +36,7 @@ Move StudentAI::GetMove(Move move)
     Node * rootState = new Node(&board, nullptr, player, move);
 
     time_t startTime = time(NULL);
-    time_t elapsedTime = time(NULL) - startTime;
-    while (elapsedTime < moveTime)
+    while (time(NULL) - startTime)
     {
         Node * unexploredLeaf = select(rootState);
         float terminalWin = simulate(unexploredLeaf);
