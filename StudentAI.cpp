@@ -20,7 +20,7 @@ Move StudentAI::GetMove(Move move)
     } else{
         board.makeMove(move,player == 1?2:1);
     }
-    vector<vector<Move> > moves = board.getAllPossibleMoves(player);
+    vector<vector<Move>> moves = board.getAllPossibleMoves(player);
     int i = rand() % (moves.size());
     vector<Move> checker_moves = moves[i];
     int j = rand() % (checker_moves.size());
