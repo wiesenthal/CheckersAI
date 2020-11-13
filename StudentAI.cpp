@@ -12,6 +12,7 @@ Board * getBoard(const Board & b,const Move & move, const int player) // gets a 
     return b2;
 }
 
+
 StudentAI::StudentAI(int col,int row,int p)
 	:AI(col, row, p)
 {
@@ -40,6 +41,26 @@ Move StudentAI::GetMove(Move move)
 
 }
 
+float Node::simulate(const Node * pickedNode, const int player) {
+    Board * board = new Board(pickedNode->board);
+
+    while (board->isWin(player) != 0) {
+        vector<vector<Move>> moves = node->board.getAllPossibleMoves(player);
+        int i = rand() % (moves.size());
+        vector<Move> checker_moves = moves[i];
+        int j = rand() % (checker_moves.size());
+        Move pickedMove = checker_moves[j];
+        board.makeMove(pickedMove,player);
+    }
+
+    int winner = board->isWin(player);
+    if (player == winner)
+        return 1;
+    if (winner == -1)
+        return 0.5;
+    return 0;
+}
+
 float StudentAI::getUCBValue(const Node * state) {
     //UCB(State) = averageValue + explorationConstant * sqrt(ln(parentN)/myN)
     float avgVal = state->winValue / (float) state->visitCount;
@@ -48,9 +69,7 @@ float StudentAI::getUCBValue(const Node * state) {
     return avgVal + exploration*s;
 }
 
-
-
-Node::Node(Board board1, Node * parent1) : board() : parent(parent1)
+Node::Node(Board board1, Node * parent1) : board(board1), parent(parent1)
 {}
 
 
