@@ -18,7 +18,7 @@ public:
 };
 
 class Node {
-    Node();
+    Node(Board, Node *);
     Board board;
     Node * parent;
     vector<Node *> children;
