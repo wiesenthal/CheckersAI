@@ -8,124 +8,124 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug"/>
+				<Option working_dir="/home/lvernian/Checkers/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug"/>
+				<Option working_dir="/home/lvernian/Checkers/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug"/>
+				<Option working_dir="/home/lvernian/Checkers/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Checker_Teacher">
-				<Option output="/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Checker_Teacher" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug"/>
+				<Option output="/home/lvernian/Checkers/cmake-build-debug/Checker_Teacher" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lvernian/Checkers/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 Checker_Teacher"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 Checker_Teacher"/>
+					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Checker_Teacher/fast">
-				<Option output="/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Checker_Teacher" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug"/>
+				<Option output="/home/lvernian/Checkers/cmake-build-debug/Checker_Teacher" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lvernian/Checkers/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 Checker_Teacher/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 Checker_Teacher/fast"/>
+					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ludovico/CLionProjects/CheckersAI/Board.cpp">
+		<Unit filename="/home/lvernian/Checkers/Board.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/Users/ludovico/CLionProjects/CheckersAI/Board.h">
+		<Unit filename="/home/lvernian/Checkers/Board.h">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/Users/ludovico/CLionProjects/CheckersAI/Checker.cpp">
+		<Unit filename="/home/lvernian/Checkers/Checker.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/Users/ludovico/CLionProjects/CheckersAI/Checker.h">
+		<Unit filename="/home/lvernian/Checkers/Checker.h">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/Users/ludovico/CLionProjects/CheckersAI/GameLogic.cpp">
+		<Unit filename="/home/lvernian/Checkers/GameLogic.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/Users/ludovico/CLionProjects/CheckersAI/GameLogic.h">
+		<Unit filename="/home/lvernian/Checkers/GameLogic.h">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/Users/ludovico/CLionProjects/CheckersAI/ManualAI.cpp">
+		<Unit filename="/home/lvernian/Checkers/ManualAI.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/Users/ludovico/CLionProjects/CheckersAI/ManualAI.h">
+		<Unit filename="/home/lvernian/Checkers/ManualAI.h">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/Users/ludovico/CLionProjects/CheckersAI/Move.cpp">
+		<Unit filename="/home/lvernian/Checkers/Move.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/Users/ludovico/CLionProjects/CheckersAI/Move.h">
+		<Unit filename="/home/lvernian/Checkers/Move.h">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/Users/ludovico/CLionProjects/CheckersAI/StudentAI.cpp">
+		<Unit filename="/home/lvernian/Checkers/StudentAI.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/Users/ludovico/CLionProjects/CheckersAI/StudentAI.h">
+		<Unit filename="/home/lvernian/Checkers/StudentAI.h">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/Users/ludovico/CLionProjects/CheckersAI/Utils.cpp">
+		<Unit filename="/home/lvernian/Checkers/Utils.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/Users/ludovico/CLionProjects/CheckersAI/Utils.h">
+		<Unit filename="/home/lvernian/Checkers/Utils.h">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/Users/ludovico/CLionProjects/CheckersAI/main.cpp">
+		<Unit filename="/home/lvernian/Checkers/main.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/Users/ludovico/CLionProjects/CheckersAI/CMakeLists.txt">
+		<Unit filename="/home/lvernian/Checkers/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

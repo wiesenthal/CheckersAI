@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /home/lvernian/CLion/clion-2020.2.4/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /home/lvernian/CLion/clion-2020.2.4/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ludovico/CLionProjects/CheckersAI
+CMAKE_SOURCE_DIR = /home/lvernian/Checkers
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug
+CMAKE_BINARY_DIR = /home/lvernian/Checkers/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Checker_Teacher.dir/depend.make
@@ -79,107 +79,107 @@ include CMakeFiles/Checker_Teacher.dir/flags.make
 
 CMakeFiles/Checker_Teacher.dir/main.cpp.o: CMakeFiles/Checker_Teacher.dir/flags.make
 CMakeFiles/Checker_Teacher.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Checker_Teacher.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/main.cpp.o -c /Users/ludovico/CLionProjects/CheckersAI/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lvernian/Checkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Checker_Teacher.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/main.cpp.o -c /home/lvernian/Checkers/main.cpp
 
 CMakeFiles/Checker_Teacher.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Checker_Teacher.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ludovico/CLionProjects/CheckersAI/main.cpp > CMakeFiles/Checker_Teacher.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lvernian/Checkers/main.cpp > CMakeFiles/Checker_Teacher.dir/main.cpp.i
 
 CMakeFiles/Checker_Teacher.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Checker_Teacher.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ludovico/CLionProjects/CheckersAI/main.cpp -o CMakeFiles/Checker_Teacher.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lvernian/Checkers/main.cpp -o CMakeFiles/Checker_Teacher.dir/main.cpp.s
 
 CMakeFiles/Checker_Teacher.dir/Move.cpp.o: CMakeFiles/Checker_Teacher.dir/flags.make
 CMakeFiles/Checker_Teacher.dir/Move.cpp.o: ../Move.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Checker_Teacher.dir/Move.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/Move.cpp.o -c /Users/ludovico/CLionProjects/CheckersAI/Move.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lvernian/Checkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Checker_Teacher.dir/Move.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/Move.cpp.o -c /home/lvernian/Checkers/Move.cpp
 
 CMakeFiles/Checker_Teacher.dir/Move.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Checker_Teacher.dir/Move.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ludovico/CLionProjects/CheckersAI/Move.cpp > CMakeFiles/Checker_Teacher.dir/Move.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lvernian/Checkers/Move.cpp > CMakeFiles/Checker_Teacher.dir/Move.cpp.i
 
 CMakeFiles/Checker_Teacher.dir/Move.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Checker_Teacher.dir/Move.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ludovico/CLionProjects/CheckersAI/Move.cpp -o CMakeFiles/Checker_Teacher.dir/Move.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lvernian/Checkers/Move.cpp -o CMakeFiles/Checker_Teacher.dir/Move.cpp.s
 
 CMakeFiles/Checker_Teacher.dir/Board.cpp.o: CMakeFiles/Checker_Teacher.dir/flags.make
 CMakeFiles/Checker_Teacher.dir/Board.cpp.o: ../Board.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Checker_Teacher.dir/Board.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/Board.cpp.o -c /Users/ludovico/CLionProjects/CheckersAI/Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lvernian/Checkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Checker_Teacher.dir/Board.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/Board.cpp.o -c /home/lvernian/Checkers/Board.cpp
 
 CMakeFiles/Checker_Teacher.dir/Board.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Checker_Teacher.dir/Board.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ludovico/CLionProjects/CheckersAI/Board.cpp > CMakeFiles/Checker_Teacher.dir/Board.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lvernian/Checkers/Board.cpp > CMakeFiles/Checker_Teacher.dir/Board.cpp.i
 
 CMakeFiles/Checker_Teacher.dir/Board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Checker_Teacher.dir/Board.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ludovico/CLionProjects/CheckersAI/Board.cpp -o CMakeFiles/Checker_Teacher.dir/Board.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lvernian/Checkers/Board.cpp -o CMakeFiles/Checker_Teacher.dir/Board.cpp.s
 
 CMakeFiles/Checker_Teacher.dir/Checker.cpp.o: CMakeFiles/Checker_Teacher.dir/flags.make
 CMakeFiles/Checker_Teacher.dir/Checker.cpp.o: ../Checker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Checker_Teacher.dir/Checker.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/Checker.cpp.o -c /Users/ludovico/CLionProjects/CheckersAI/Checker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lvernian/Checkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Checker_Teacher.dir/Checker.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/Checker.cpp.o -c /home/lvernian/Checkers/Checker.cpp
 
 CMakeFiles/Checker_Teacher.dir/Checker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Checker_Teacher.dir/Checker.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ludovico/CLionProjects/CheckersAI/Checker.cpp > CMakeFiles/Checker_Teacher.dir/Checker.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lvernian/Checkers/Checker.cpp > CMakeFiles/Checker_Teacher.dir/Checker.cpp.i
 
 CMakeFiles/Checker_Teacher.dir/Checker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Checker_Teacher.dir/Checker.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ludovico/CLionProjects/CheckersAI/Checker.cpp -o CMakeFiles/Checker_Teacher.dir/Checker.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lvernian/Checkers/Checker.cpp -o CMakeFiles/Checker_Teacher.dir/Checker.cpp.s
 
 CMakeFiles/Checker_Teacher.dir/Utils.cpp.o: CMakeFiles/Checker_Teacher.dir/flags.make
 CMakeFiles/Checker_Teacher.dir/Utils.cpp.o: ../Utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Checker_Teacher.dir/Utils.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/Utils.cpp.o -c /Users/ludovico/CLionProjects/CheckersAI/Utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lvernian/Checkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Checker_Teacher.dir/Utils.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/Utils.cpp.o -c /home/lvernian/Checkers/Utils.cpp
 
 CMakeFiles/Checker_Teacher.dir/Utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Checker_Teacher.dir/Utils.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ludovico/CLionProjects/CheckersAI/Utils.cpp > CMakeFiles/Checker_Teacher.dir/Utils.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lvernian/Checkers/Utils.cpp > CMakeFiles/Checker_Teacher.dir/Utils.cpp.i
 
 CMakeFiles/Checker_Teacher.dir/Utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Checker_Teacher.dir/Utils.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ludovico/CLionProjects/CheckersAI/Utils.cpp -o CMakeFiles/Checker_Teacher.dir/Utils.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lvernian/Checkers/Utils.cpp -o CMakeFiles/Checker_Teacher.dir/Utils.cpp.s
 
 CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.o: CMakeFiles/Checker_Teacher.dir/flags.make
 CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.o: ../StudentAI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.o -c /Users/ludovico/CLionProjects/CheckersAI/StudentAI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lvernian/Checkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.o -c /home/lvernian/Checkers/StudentAI.cpp
 
 CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ludovico/CLionProjects/CheckersAI/StudentAI.cpp > CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lvernian/Checkers/StudentAI.cpp > CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.i
 
 CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ludovico/CLionProjects/CheckersAI/StudentAI.cpp -o CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lvernian/Checkers/StudentAI.cpp -o CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.s
 
 CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.o: CMakeFiles/Checker_Teacher.dir/flags.make
 CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.o: ../GameLogic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.o -c /Users/ludovico/CLionProjects/CheckersAI/GameLogic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lvernian/Checkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.o -c /home/lvernian/Checkers/GameLogic.cpp
 
 CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ludovico/CLionProjects/CheckersAI/GameLogic.cpp > CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lvernian/Checkers/GameLogic.cpp > CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.i
 
 CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ludovico/CLionProjects/CheckersAI/GameLogic.cpp -o CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lvernian/Checkers/GameLogic.cpp -o CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.s
 
 CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.o: CMakeFiles/Checker_Teacher.dir/flags.make
 CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.o: ../ManualAI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.o -c /Users/ludovico/CLionProjects/CheckersAI/ManualAI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lvernian/Checkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.o -c /home/lvernian/Checkers/ManualAI.cpp
 
 CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ludovico/CLionProjects/CheckersAI/ManualAI.cpp > CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lvernian/Checkers/ManualAI.cpp > CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.i
 
 CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ludovico/CLionProjects/CheckersAI/ManualAI.cpp -o CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lvernian/Checkers/ManualAI.cpp -o CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.s
 
 # Object files for target Checker_Teacher
 Checker_Teacher_OBJECTS = \
@@ -205,7 +205,7 @@ Checker_Teacher: CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.o
 Checker_Teacher: CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.o
 Checker_Teacher: CMakeFiles/Checker_Teacher.dir/build.make
 Checker_Teacher: CMakeFiles/Checker_Teacher.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Checker_Teacher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lvernian/Checkers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Checker_Teacher"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Checker_Teacher.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -218,6 +218,6 @@ CMakeFiles/Checker_Teacher.dir/clean:
 .PHONY : CMakeFiles/Checker_Teacher.dir/clean
 
 CMakeFiles/Checker_Teacher.dir/depend:
-	cd /Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ludovico/CLionProjects/CheckersAI /Users/ludovico/CLionProjects/CheckersAI /Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug /Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug /Users/ludovico/CLionProjects/CheckersAI/cmake-build-debug/CMakeFiles/Checker_Teacher.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lvernian/Checkers/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lvernian/Checkers /home/lvernian/Checkers /home/lvernian/Checkers/cmake-build-debug /home/lvernian/Checkers/cmake-build-debug /home/lvernian/Checkers/cmake-build-debug/CMakeFiles/Checker_Teacher.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Checker_Teacher.dir/depend
 
