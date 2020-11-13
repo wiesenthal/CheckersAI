@@ -1,6 +1,7 @@
 #include "StudentAI.h"
 #include <random>
 #include <cmath>
+#include <float.h>
 
 //The following part should be completed by students.
 //The students can modify anything except the class name and exisiting functions and varibles.
@@ -61,6 +62,10 @@ float StudentAI::simulate(const Node * pickedNode) {
 
 float StudentAI::getUCBValue(const Node * state) {
     //UCB(State) = averageValue + explorationConstant * sqrt(ln(parentN)/myN)
+    if (state->visitCount == 0)
+    {
+        return FLT_MAX;
+    }
     float avgVal = state->winValue / (float) state->visitCount;
     float s = sqrt(log((float)state->parent->visitCount)/(float)state->visitCount);
 
@@ -82,6 +87,10 @@ Node * StudentAI::getMaxUCB(Node * node) {
     float max = 0;
     Node * bestChild = nullptr;
     for (int i = 0; i < node->children.size(); i++) {
+        if (node->children[i]->visitCount == 0) //if we find an unexplored node, the UCB is effectively infinite
+        {
+            return node->children[i];
+        }
         if (getUCBValue(node->children[i]) > max) {
             max = getUCBValue(node->children[i]);
             bestChild = node->children[i];
@@ -100,7 +109,7 @@ Node * StudentAI::select(Node * node) {
     int newPlayer = node->player == 1 ? 2 : 1;
     for (int i = 0;  i < moves.size(); i++) {
         for (int j = 0; j < moves[i].size(), j++){
-            Board * newBoard = getBoard(node->board, moves[i][j], node->player);
+            Board * newBoard = getBoard(*(node->board), moves[i][j], node->player);
             Node * newNode = new Node(newBoard, node, newPlayer);
             node->children.push_back(newNode);
         }
