@@ -9,14 +9,22 @@ using namespace std;
 
 //The following part should be completed by students.
 //Students can modify anything except the class name and exisiting functions and varibles.
-class Node {
+class StudentAI :public AI
+{
 public:
-    Node(Board, Node *);
     Board board;
-    Node * parent;
-    vector<Node *> children;
-    double winValue;
-    int visitCount;
+	StudentAI(int col, int row, int p);
+	virtual Move GetMove(Move board);
+};
+
+class Node {
+    public:
+        Node(Board, Node *);
+        Board board;
+        Node * parent;
+        vector<Node *> children;
+        double winValue;
+        int visitCount;
 
 };
 
