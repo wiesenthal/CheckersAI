@@ -1,7 +1,8 @@
 #include "StudentAI.h"
 #include <random>
 #include <cmath>
-#include <float.h>
+#include <ctime>
+#include <cfloat>
 
 //The following part should be completed by students.
 //The students can modify anything except the class name and exisiting functions and varibles.
@@ -31,13 +32,27 @@ Move StudentAI::GetMove(Move move)
     } else{
         board.makeMove(move,player == 1?2:1);
     }
-    vector<vector<Move>> moves = board.getAllPossibleMoves(player);
-    int i = rand() % (moves.size());
-    vector<Move> checker_moves = moves[i];
-    int j = rand() % (checker_moves.size());
-    Move res = checker_moves[j];
-    board.makeMove(res,player);
-    return res;
+    //create root
+    Node * rootState = new Node(&board, nullptr, player, move);
+
+    time_t startTime = time(NULL);
+    time_t elapsedTime = time(NULL) - startTime;
+    while (elapsedTime < moveTime)
+    {
+        Node * unexploredLeaf = select(rootState);
+        float terminalWin = simulate(unexploredLeaf);
+        backpropogate(unexploredLeaf, terminalWin);
+    }
+    //vector<vector<Move>> moves = board.getAllPossibleMoves(player);
+    //int i = rand() % (moves.size());
+    //vector<Move> checker_moves = moves[i];
+    //int j = rand() % (checker_moves.size());
+    //Move res = checker_moves[j];
+
+    Node * best = chooseBest(rootState);
+    Move result = best->m;
+    board.makeMove(result,player);
+    return result;
 
 
 }
@@ -110,7 +125,7 @@ Node * StudentAI::select(Node * node) {
     for (int i = 0;  i < moves.size(); i++) {
         for (int j = 0; j < moves[i].size(), j++){
             Board * newBoard = getBoard(*(node->board), moves[i][j], node->player);
-            Node * newNode = new Node(newBoard, node, newPlayer);
+            Node * newNode = new Node(newBoard, node, newPlayer, moves[i][j]);
             node->children.push_back(newNode);
         }
     }
@@ -136,8 +151,8 @@ Node *StudentAI::chooseBest(Node * node) {
     return bestChild;
 }
 
-Node::Node(Board * board1, Node * parent1, int player1) : board(board1), parent(parent1),
-    winValue(0), visitCount(0), player(player1)
+Node::Node(Board * board1, Node * parent1, int player1, Move m1) : board(board1), parent(parent1),
+    winValue(0), visitCount(0), player(player1), m(m1)
 {}
 
 

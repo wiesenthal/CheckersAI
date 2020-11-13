@@ -2,6 +2,7 @@
 #define STUDENTAI_H
 #include "AI.h"
 #include "Board.h"
+#include "Move.h"
 #include <vector>
 
 using namespace std;
@@ -12,9 +13,10 @@ using namespace std;
 
 class Node {
     public:
-        Node(Board *, Node *, int);
+        Node(Board *, Node *, int, Move);
         Board * board;
         Node * parent;
+        Move m;
         vector<Node *> children;
         float winValue;
         int visitCount;
@@ -32,6 +34,7 @@ public:
     virtual Move GetMove(Move board);
 
     const float exploration = 1;
+    const float moveTime = 7; // seconds
 
     //Our functions
     Node * chooseBest(Node *); //return node at the end of MCTS to make final move
