@@ -18,6 +18,7 @@ class Node {
         vector<Node *> children;
         float winValue;
         int visitCount;
+        int player;
 
 };
 

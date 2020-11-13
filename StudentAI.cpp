@@ -42,16 +42,16 @@ Move StudentAI::GetMove(Move move)
 }
 
 float StudentAI::simulate(const Node * pickedNode) {
-    Board * board = new Board(pickedNode->board);
-
-    while (board->isWin(player) != 0) {
-        vector<vector<Move>> moves = board->getAllPossibleMoves(player);
+    Board * board = new Board(*(pickedNode->board));
+    int currPlayer = pickedNode->player;
+    while (board->isWin(currPlayer) != 0) {
+        vector<vector<Move>> moves = board->getAllPossibleMoves(currPlayer);
         int i = rand() % (moves.size());
         vector<Move> checker_moves = moves[i];
         int j = rand() % (checker_moves.size());
         Move pickedMove = checker_moves[j];
-        board->makeMove(pickedMove,player);
-        player = player == 1 ? 2 : 1
+        board->makeMove(pickedMove,currPlayer);
+        currPlayer = currPlayer == 1 ? 2 : 1
     }
 
     int winner = board->isWin(player);
