@@ -50,8 +50,8 @@ float StudentAI::simulate(const Node * pickedNode) {
         vector<Move> checker_moves = moves[i];
         int j = rand() % (checker_moves.size());
         Move pickedMove = checker_moves[j];
-        board->makeMove(pickedMove,player);
-        player = player == 1 ? 2 : 1
+        board->makeMove(pickedMove,currPlayer);
+        currPlayer = currPlayer == 1 ? 2 : 1;
     }
 
     int winner = board->isWin(player);
