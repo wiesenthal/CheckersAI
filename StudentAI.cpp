@@ -78,6 +78,25 @@ void StudentAI::backpropogate(Node * state, float terminalPlayer) {
     }
 }
 
+Node * StudentAI::getMaxUCB(Node * node) {
+    float max = 0;
+    Node * bestChild = nullptr;
+    for (int i = 0; i < node->children.size(); i++) {
+        if (getUCBValue(node->children[i]) > max) {
+            max = getUCBValue(node->children[i]);
+            bestChild = node->children[i];
+        }
+    }
+    return bestChild;
+}
+
+Node * StudentAI::select(Node * node) {
+    while (!node->children.empty()) {
+        node = getMaxUCB(node);
+    }
+    return node;
+}
+
 Node::Node(Board * board1, Node * parent1) : board(board1), parent(parent1)
 {}
 
