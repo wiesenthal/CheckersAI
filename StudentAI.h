@@ -38,7 +38,7 @@ public:
     Node * getMaxUCB(Node *); //return child node with highest UCB value
 
     float getUCBValue(const Node *); //get the UCB value of one board state
-    float simulate(const Node *, const int); // rollout from a leaf node to get to the end with random nodes
+    float simulate(const Node *); // rollout from a leaf node to get to the end with random nodes
     void backpropogate(Node *, float); // update values from the leaf node up, given the value returned by simulate
 
 
