@@ -118,6 +118,24 @@ Node * StudentAI::select(Node * node) {
     return getMaxUCB(node);
 }
 
+Node *StudentAI::chooseBest(Node * node) {
+    float max = 0;
+    Node * bestChild;
+    for (int i = 0; i < node->children.size(); i++) {
+
+        if (node->children[i]->visitCount == 0) //if we find an unexplored node
+        {
+            continue; //ignore the node, this should never occur however
+        }
+        float avgVal = node->winValue / (float) node->visitCount;
+        if (avgVal > max) {
+            max = avgVal;
+            bestChild = node->children[i];
+        }
+    }
+    return bestChild;
+}
+
 Node::Node(Board * board1, Node * parent1, int player1) : board(board1), parent(parent1),
     winValue(0), visitCount(0), player(player1)
 {}
