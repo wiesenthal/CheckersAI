@@ -35,7 +35,10 @@ public:
 	StudentAI(int col, int row, int p);
 	virtual Move GetMove(Move board);
 	Board getBoard(const Board &, const Move &, const int);
-	float getUCBValue(const Node *);
+	float getUCBValue(const Node *); //get the UCB value of one board state
+	float simulate(const Node *); // rollout from a leaf node to get to the end with random nodes
+	void backpropogate(Node *, float); // update values from the leaf node up, given the value returned by simulate
+
 };
 
 
