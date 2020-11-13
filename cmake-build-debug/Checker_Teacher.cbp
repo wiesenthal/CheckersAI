@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/lvernian/Checkers/cmake-build-debug"/>
+				<Option working_dir="/tmp/tmp.ayeLaSJ2sT/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/lvernian/Checkers/cmake-build-debug"/>
+				<Option working_dir="/tmp/tmp.ayeLaSJ2sT/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/lvernian/Checkers/cmake-build-debug"/>
+				<Option working_dir="/tmp/tmp.ayeLaSJ2sT/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Checker_Teacher">
-				<Option output="/home/lvernian/Checkers/cmake-build-debug/Checker_Teacher" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/lvernian/Checkers/cmake-build-debug"/>
+				<Option output="/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Checker_Teacher" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.ayeLaSJ2sT/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 Checker_Teacher"/>
-					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 Checker_Teacher"/>
+					<CompileFile command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Checker_Teacher/fast">
-				<Option output="/home/lvernian/Checkers/cmake-build-debug/Checker_Teacher" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/lvernian/Checkers/cmake-build-debug"/>
+				<Option output="/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Checker_Teacher" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.ayeLaSJ2sT/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,59 +73,59 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 Checker_Teacher/fast"/>
-					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j24 -f &quot;/home/lvernian/Checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 Checker_Teacher/fast"/>
+					<CompileFile command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/lvernian/Checkers/Board.cpp">
+		<Unit filename="/tmp/tmp.ayeLaSJ2sT/Board.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/home/lvernian/Checkers/Board.h">
+		<Unit filename="/tmp/tmp.ayeLaSJ2sT/Board.h">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/home/lvernian/Checkers/Checker.cpp">
+		<Unit filename="/tmp/tmp.ayeLaSJ2sT/Checker.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/home/lvernian/Checkers/Checker.h">
+		<Unit filename="/tmp/tmp.ayeLaSJ2sT/Checker.h">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/home/lvernian/Checkers/GameLogic.cpp">
+		<Unit filename="/tmp/tmp.ayeLaSJ2sT/GameLogic.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/home/lvernian/Checkers/GameLogic.h">
+		<Unit filename="/tmp/tmp.ayeLaSJ2sT/GameLogic.h">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/home/lvernian/Checkers/ManualAI.cpp">
+		<Unit filename="/tmp/tmp.ayeLaSJ2sT/ManualAI.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/home/lvernian/Checkers/ManualAI.h">
+		<Unit filename="/tmp/tmp.ayeLaSJ2sT/ManualAI.h">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/home/lvernian/Checkers/Move.cpp">
+		<Unit filename="/tmp/tmp.ayeLaSJ2sT/Move.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/home/lvernian/Checkers/Move.h">
+		<Unit filename="/tmp/tmp.ayeLaSJ2sT/Move.h">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/home/lvernian/Checkers/StudentAI.cpp">
+		<Unit filename="/tmp/tmp.ayeLaSJ2sT/StudentAI.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/home/lvernian/Checkers/StudentAI.h">
+		<Unit filename="/tmp/tmp.ayeLaSJ2sT/StudentAI.h">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/home/lvernian/Checkers/Utils.cpp">
+		<Unit filename="/tmp/tmp.ayeLaSJ2sT/Utils.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/home/lvernian/Checkers/Utils.h">
+		<Unit filename="/tmp/tmp.ayeLaSJ2sT/Utils.h">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/home/lvernian/Checkers/main.cpp">
+		<Unit filename="/tmp/tmp.ayeLaSJ2sT/main.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/home/lvernian/Checkers/CMakeLists.txt">
+		<Unit filename="/tmp/tmp.ayeLaSJ2sT/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

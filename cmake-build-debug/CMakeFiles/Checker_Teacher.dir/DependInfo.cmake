@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/lvernian/Checkers/Board.cpp" "/home/lvernian/Checkers/cmake-build-debug/CMakeFiles/Checker_Teacher.dir/Board.cpp.o"
-  "/home/lvernian/Checkers/Checker.cpp" "/home/lvernian/Checkers/cmake-build-debug/CMakeFiles/Checker_Teacher.dir/Checker.cpp.o"
-  "/home/lvernian/Checkers/GameLogic.cpp" "/home/lvernian/Checkers/cmake-build-debug/CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.o"
-  "/home/lvernian/Checkers/ManualAI.cpp" "/home/lvernian/Checkers/cmake-build-debug/CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.o"
-  "/home/lvernian/Checkers/Move.cpp" "/home/lvernian/Checkers/cmake-build-debug/CMakeFiles/Checker_Teacher.dir/Move.cpp.o"
-  "/home/lvernian/Checkers/StudentAI.cpp" "/home/lvernian/Checkers/cmake-build-debug/CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.o"
-  "/home/lvernian/Checkers/Utils.cpp" "/home/lvernian/Checkers/cmake-build-debug/CMakeFiles/Checker_Teacher.dir/Utils.cpp.o"
-  "/home/lvernian/Checkers/main.cpp" "/home/lvernian/Checkers/cmake-build-debug/CMakeFiles/Checker_Teacher.dir/main.cpp.o"
+  "/tmp/tmp.ayeLaSJ2sT/Board.cpp" "/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/CMakeFiles/Checker_Teacher.dir/Board.cpp.o"
+  "/tmp/tmp.ayeLaSJ2sT/Checker.cpp" "/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/CMakeFiles/Checker_Teacher.dir/Checker.cpp.o"
+  "/tmp/tmp.ayeLaSJ2sT/GameLogic.cpp" "/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.o"
+  "/tmp/tmp.ayeLaSJ2sT/ManualAI.cpp" "/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.o"
+  "/tmp/tmp.ayeLaSJ2sT/Move.cpp" "/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/CMakeFiles/Checker_Teacher.dir/Move.cpp.o"
+  "/tmp/tmp.ayeLaSJ2sT/StudentAI.cpp" "/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.o"
+  "/tmp/tmp.ayeLaSJ2sT/Utils.cpp" "/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/CMakeFiles/Checker_Teacher.dir/Utils.cpp.o"
+  "/tmp/tmp.ayeLaSJ2sT/main.cpp" "/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/CMakeFiles/Checker_Teacher.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

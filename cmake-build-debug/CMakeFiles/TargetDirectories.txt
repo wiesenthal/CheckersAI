@@ -1,3 +1,3 @@
-/home/lvernian/Checkers/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/lvernian/Checkers/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/lvernian/Checkers/cmake-build-debug/CMakeFiles/Checker_Teacher.dir
+/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/CMakeFiles/edit_cache.dir
+/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/CMakeFiles/Checker_Teacher.dir
