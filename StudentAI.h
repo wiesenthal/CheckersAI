@@ -14,6 +14,6 @@ public:
 	virtual Move GetMove(Move board);
 };
 
-//Node data
+//asdfasdfadfa
 
 #endif //STUDENTAI_H
