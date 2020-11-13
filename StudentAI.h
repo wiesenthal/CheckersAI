@@ -26,8 +26,8 @@ public:
     Board board;
 	StudentAI(int col, int row, int p);
 	virtual Move GetMove(Move board);
-	Board getBoard(Board, Move);
-	float getUCBValue(Node *);
+	Board getBoard(const Board & b,const Move & move);
+	float getUCBValue(const Node *);
 };
 
 
