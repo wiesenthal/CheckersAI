@@ -36,6 +36,8 @@ public:
     const float exploration = 1;
     const float moveTime = 7; // seconds
 
+    int totalVisitCount = 0;
+
     unordered_map<Node *, Move> movePath;
 
     //Our functions

@@ -33,14 +33,15 @@ Move StudentAI::GetMove(Move move)
         board.makeMove(move,player == 1?2:1);
     }
     //create root
-    Node * rootState = new Node(&board, nullptr, player, move);
+    Node * rootState = new Node(&board, nullptr, player);
 
     time_t startTime = time(NULL);
-    while (time(NULL) - startTime)
+    while ((time(NULL) - startTime) < moveTime)
     {
         Node * unexploredLeaf = select(rootState);
         float terminalWin = simulate(unexploredLeaf);
         backpropogate(unexploredLeaf, terminalWin);
+        totalVisitCount++;
     }
     //vector<vector<Move>> moves = board.getAllPossibleMoves(player);
     //int i = rand() % (moves.size());
@@ -59,7 +60,7 @@ Move StudentAI::GetMove(Move move)
 float StudentAI::simulate(const Node * pickedNode) {
     Board * board = new Board(*(pickedNode->board));
     int currPlayer = pickedNode->player;
-    while (board->isWin(currPlayer) != 0) {
+    while (board->isWin(currPlayer) == 0) {
         vector<vector<Move>> moves = board->getAllPossibleMoves(currPlayer);
         // THIS IS NOT TRULY RANDOM, CHANGE SOON
         int i = rand() % (moves.size());
@@ -81,14 +82,14 @@ float StudentAI::getUCBValue(const Node * state) {
         return FLT_MAX;
     }
     float avgVal = state->winValue / (float) state->visitCount;
-    float s = sqrt(log((float)state->parent->visitCount)/(float)state->visitCount);
+    float s = sqrt(log(totalVisitCount/(float)state->visitCount));
 
     return avgVal + (exploration*s);
 }
 
 void StudentAI::backpropogate(Node * state, float terminalPlayer) {
     float score;
-    while (state->parent)
+    while (state)
     {
         score = 0 + (terminalPlayer == -1)*0.5 + (terminalPlayer == state->player);
         state->winValue += score;
@@ -98,8 +99,9 @@ void StudentAI::backpropogate(Node * state, float terminalPlayer) {
 }
 
 Node * StudentAI::getMaxUCB(Node * node) {
-    float max = 0;
+    float max = -(FLT_MAX-100);
     Node * bestChild = nullptr;
+
     for (int i = 0; i < node->children.size(); i++) {
         if (node->children[i]->visitCount == 0) //if we find an unexplored node, the UCB is effectively infinite
         {
@@ -119,20 +121,24 @@ Node * StudentAI::select(Node * node) {
     }
 
     //Expand tree
-    bool isRoot = node->parent == nullptr;
-    vector<vector<Move>> moves = node->board->getAllPossibleMoves(node->player);
-    int newPlayer = node->player == 1 ? 2 : 1;
-    for (int i = 0;  i < moves.size(); i++) {
-        for (int j = 0; j < moves[i].size(); j++){
-            Board * newBoard = getBoard(*(node->board), moves[i][j], node->player);
-            Node * newNode = new Node(newBoard, node, newPlayer);
-            if (isRoot)
-                movePath[newNode] = moves[i][j];
-            node->children.push_back(newNode);
+    if (node->visitCount <= 0) {
+        bool isRoot = node->parent == nullptr;
+        vector <vector<Move>> moves = node->board->getAllPossibleMoves(node->player);
+        int newPlayer = node->player == 1 ? 2 : 1;
+        for (int i = 0; i < moves.size(); i++) {
+            for (int j = 0; j < moves[i].size(); j++) {
+                Board *newBoard = getBoard(*(node->board), moves[i][j], node->player);
+                Node *newNode = new Node(newBoard, node, newPlayer);
+                if (isRoot)
+                    movePath[newNode] = moves[i][j];
+                node->children.push_back(newNode);
+            }
         }
+        return getMaxUCB(node);
     }
+    return node;
 
-    return getMaxUCB(node);
+
 }
 
 Node *StudentAI::chooseBest(Node * node) {
