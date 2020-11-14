@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/tmp/tmp.ayeLaSJ2sT/cmake-build-debug"/>
+				<Option working_dir="/home/mwiesent/cs171/CheckAI/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j64 -f &quot;/home/mwiesent/cs171/CheckAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j64 -f &quot;/home/mwiesent/cs171/CheckAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j64 -f &quot;/home/mwiesent/cs171/CheckAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j64 -f &quot;/home/mwiesent/cs171/CheckAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/tmp/tmp.ayeLaSJ2sT/cmake-build-debug"/>
+				<Option working_dir="/home/mwiesent/cs171/CheckAI/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j64 -f &quot;/home/mwiesent/cs171/CheckAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j64 -f &quot;/home/mwiesent/cs171/CheckAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j64 -f &quot;/home/mwiesent/cs171/CheckAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j64 -f &quot;/home/mwiesent/cs171/CheckAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/tmp/tmp.ayeLaSJ2sT/cmake-build-debug"/>
+				<Option working_dir="/home/mwiesent/cs171/CheckAI/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j64 -f &quot;/home/mwiesent/cs171/CheckAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j64 -f &quot;/home/mwiesent/cs171/CheckAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j64 -f &quot;/home/mwiesent/cs171/CheckAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j64 -f &quot;/home/mwiesent/cs171/CheckAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Checker_Teacher">
-				<Option output="/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Checker_Teacher" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.ayeLaSJ2sT/cmake-build-debug"/>
+				<Option output="/home/mwiesent/cs171/CheckAI/cmake-build-debug/Checker_Teacher" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mwiesent/cs171/CheckAI/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 Checker_Teacher"/>
-					<CompileFile command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j64 -f &quot;/home/mwiesent/cs171/CheckAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 Checker_Teacher"/>
+					<CompileFile command="/usr/bin/gmake -j64 -f &quot;/home/mwiesent/cs171/CheckAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j64 -f &quot;/home/mwiesent/cs171/CheckAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j64 -f &quot;/home/mwiesent/cs171/CheckAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Checker_Teacher/fast">
-				<Option output="/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Checker_Teacher" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.ayeLaSJ2sT/cmake-build-debug"/>
+				<Option output="/home/mwiesent/cs171/CheckAI/cmake-build-debug/Checker_Teacher" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mwiesent/cs171/CheckAI/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,59 +73,59 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 Checker_Teacher/fast"/>
-					<CompileFile command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j64 -f &quot;/home/mwiesent/cs171/CheckAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 Checker_Teacher/fast"/>
+					<CompileFile command="/usr/bin/gmake -j64 -f &quot;/home/mwiesent/cs171/CheckAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j64 -f &quot;/home/mwiesent/cs171/CheckAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j64 -f &quot;/home/mwiesent/cs171/CheckAI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/tmp/tmp.ayeLaSJ2sT/Board.cpp">
+		<Unit filename="/home/mwiesent/cs171/CheckAI/Board.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.ayeLaSJ2sT/Board.h">
+		<Unit filename="/home/mwiesent/cs171/CheckAI/Board.h">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.ayeLaSJ2sT/Checker.cpp">
+		<Unit filename="/home/mwiesent/cs171/CheckAI/Checker.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.ayeLaSJ2sT/Checker.h">
+		<Unit filename="/home/mwiesent/cs171/CheckAI/Checker.h">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.ayeLaSJ2sT/GameLogic.cpp">
+		<Unit filename="/home/mwiesent/cs171/CheckAI/GameLogic.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.ayeLaSJ2sT/GameLogic.h">
+		<Unit filename="/home/mwiesent/cs171/CheckAI/GameLogic.h">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.ayeLaSJ2sT/ManualAI.cpp">
+		<Unit filename="/home/mwiesent/cs171/CheckAI/ManualAI.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.ayeLaSJ2sT/ManualAI.h">
+		<Unit filename="/home/mwiesent/cs171/CheckAI/ManualAI.h">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.ayeLaSJ2sT/Move.cpp">
+		<Unit filename="/home/mwiesent/cs171/CheckAI/Move.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.ayeLaSJ2sT/Move.h">
+		<Unit filename="/home/mwiesent/cs171/CheckAI/Move.h">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.ayeLaSJ2sT/StudentAI.cpp">
+		<Unit filename="/home/mwiesent/cs171/CheckAI/StudentAI.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.ayeLaSJ2sT/StudentAI.h">
+		<Unit filename="/home/mwiesent/cs171/CheckAI/StudentAI.h">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.ayeLaSJ2sT/Utils.cpp">
+		<Unit filename="/home/mwiesent/cs171/CheckAI/Utils.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.ayeLaSJ2sT/Utils.h">
+		<Unit filename="/home/mwiesent/cs171/CheckAI/Utils.h">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.ayeLaSJ2sT/main.cpp">
+		<Unit filename="/home/mwiesent/cs171/CheckAI/main.cpp">
 			<Option target="Checker_Teacher"/>
 		</Unit>
-		<Unit filename="/tmp/tmp.ayeLaSJ2sT/CMakeLists.txt">
+		<Unit filename="/home/mwiesent/cs171/CheckAI/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

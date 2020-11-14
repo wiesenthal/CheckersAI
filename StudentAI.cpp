@@ -24,9 +24,11 @@ StudentAI::StudentAI(int col,int row,int p)
 }
 
 //Test- Ludo
+
 Move StudentAI::GetMove(Move move)
 {
     totalVisitCount = 0;
+
 
     if (move.seq.empty())
     {
@@ -37,26 +39,30 @@ Move StudentAI::GetMove(Move move)
     //create root
     Node * rootState = new Node(&board, nullptr, player);
 
-    time_t startTime = time(NULL);
-    while ((time(NULL) - startTime) < moveTime)
+    time_t startTime = time(nullptr);
+    while (time(nullptr) - startTime < moveTime)
     {
         Node * unexploredLeaf = select(rootState);
         float terminalWin = simulate(unexploredLeaf);
         backpropogate(unexploredLeaf, terminalWin);
         totalVisitCount++;
     }
-    //vector<vector<Move>> moves = board.getAllPossibleMoves(player);
-    //int i = rand() % (moves.size());
-    //vector<Move> checker_moves = moves[i];
-    //int j = rand() % (checker_moves.size());
-    //Move res = checker_moves[j];
+
 
     Node * best = chooseBest(rootState);
     Move result = movePath[best];
     board.makeMove(result,player);
     return result;
 
-
+    /*
+    vector<vector<Move>> moves = board.getAllPossibleMoves(player);
+    int i = rand() % (moves.size());
+    vector<Move> checker_moves = moves[i];
+    int j = rand() % (checker_moves.size());
+    Move res = checker_moves[j];
+    board.makeMove(res, player);
+    return res;
+    */
 }
 
 float StudentAI::simulate(const Node * pickedNode) {
@@ -84,7 +90,7 @@ float StudentAI::getUCBValue(const Node * state) {
         return FLT_MAX;
     }
     float avgVal = state->winValue / (float) state->visitCount;
-    float s = sqrt(log(totalVisitCount/(float)state->visitCount));
+    float s = sqrt(log((float)state->parent->visitCount)/(float)state->visitCount);
 
     return avgVal + (exploration*s);
 }

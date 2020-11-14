@@ -6,17 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/ludovico/CLionProjects/CheckersAI/AI.h
+/home/mwiesent/cs171/CheckAI/AI.h
 Move.h
-/Users/ludovico/CLionProjects/CheckersAI/Move.h
+/home/mwiesent/cs171/CheckAI/Move.h
 Board.h
-/Users/ludovico/CLionProjects/CheckersAI/Board.h
+/home/mwiesent/cs171/CheckAI/Board.h
 
-/Users/ludovico/CLionProjects/CheckersAI/Board.cpp
-Board.h
-/Users/ludovico/CLionProjects/CheckersAI/Board.h
-
-/Users/ludovico/CLionProjects/CheckersAI/Board.h
+/home/mwiesent/cs171/CheckAI/Board.h
 vector
 -
 iomanip
@@ -28,17 +24,11 @@ map
 set
 -
 Move.h
-/Users/ludovico/CLionProjects/CheckersAI/Move.h
+/home/mwiesent/cs171/CheckAI/Move.h
 Checker.h
-/Users/ludovico/CLionProjects/CheckersAI/Checker.h
+/home/mwiesent/cs171/CheckAI/Checker.h
 
-/Users/ludovico/CLionProjects/CheckersAI/Checker.cpp
-Checker.h
-/Users/ludovico/CLionProjects/CheckersAI/Checker.h
-Board.h
-/Users/ludovico/CLionProjects/CheckersAI/Board.h
-
-/Users/ludovico/CLionProjects/CheckersAI/Checker.h
+/home/mwiesent/cs171/CheckAI/Checker.h
 vector
 -
 map
@@ -48,39 +38,11 @@ string
 set
 -
 Utils.h
-/Users/ludovico/CLionProjects/CheckersAI/Utils.h
+/home/mwiesent/cs171/CheckAI/Utils.h
 Move.h
-/Users/ludovico/CLionProjects/CheckersAI/Move.h
+/home/mwiesent/cs171/CheckAI/Move.h
 
-/Users/ludovico/CLionProjects/CheckersAI/GameLogic.cpp
-GameLogic.h
-/Users/ludovico/CLionProjects/CheckersAI/GameLogic.h
-
-/Users/ludovico/CLionProjects/CheckersAI/GameLogic.h
-AI.h
-/Users/ludovico/CLionProjects/CheckersAI/AI.h
-Board.h
-/Users/ludovico/CLionProjects/CheckersAI/Board.h
-StudentAI.h
-/Users/ludovico/CLionProjects/CheckersAI/StudentAI.h
-ManualAI.h
-/Users/ludovico/CLionProjects/CheckersAI/ManualAI.h
-
-/Users/ludovico/CLionProjects/CheckersAI/ManualAI.cpp
-ManualAI.h
-/Users/ludovico/CLionProjects/CheckersAI/ManualAI.h
-iostream
--
-
-/Users/ludovico/CLionProjects/CheckersAI/ManualAI.h
-AI.h
-/Users/ludovico/CLionProjects/CheckersAI/AI.h
-
-/Users/ludovico/CLionProjects/CheckersAI/Move.cpp
-Move.h
-/Users/ludovico/CLionProjects/CheckersAI/Move.h
-
-/Users/ludovico/CLionProjects/CheckersAI/Move.h
+/home/mwiesent/cs171/CheckAI/Move.h
 vector
 -
 string
@@ -88,25 +50,33 @@ string
 iostream
 -
 Utils.h
-/Users/ludovico/CLionProjects/CheckersAI/Utils.h
+/home/mwiesent/cs171/CheckAI/Utils.h
 
-/Users/ludovico/CLionProjects/CheckersAI/StudentAI.cpp
+/home/mwiesent/cs171/CheckAI/StudentAI.cpp
 StudentAI.h
-/Users/ludovico/CLionProjects/CheckersAI/StudentAI.h
+/home/mwiesent/cs171/CheckAI/StudentAI.h
 random
 -
+cmath
+-
+ctime
+-
+cfloat
+-
 
-/Users/ludovico/CLionProjects/CheckersAI/StudentAI.h
+/home/mwiesent/cs171/CheckAI/StudentAI.h
 AI.h
-/Users/ludovico/CLionProjects/CheckersAI/AI.h
+/home/mwiesent/cs171/CheckAI/AI.h
 Board.h
-/Users/ludovico/CLionProjects/CheckersAI/Board.h
+/home/mwiesent/cs171/CheckAI/Board.h
+Move.h
+/home/mwiesent/cs171/CheckAI/Move.h
+vector
+-
+unordered_map
+-
 
-/Users/ludovico/CLionProjects/CheckersAI/Utils.cpp
-Utils.h
-/Users/ludovico/CLionProjects/CheckersAI/Utils.h
-
-/Users/ludovico/CLionProjects/CheckersAI/Utils.h
+/home/mwiesent/cs171/CheckAI/Utils.h
 exception
 -
 vector
@@ -115,8 +85,4 @@ map
 -
 string
 -
-
-/Users/ludovico/CLionProjects/CheckersAI/main.cpp
-GameLogic.h
-/Users/ludovico/CLionProjects/CheckersAI/GameLogic.h
 

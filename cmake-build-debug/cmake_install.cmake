@@ -1,4 +1,4 @@
-# Install script for directory: /tmp/tmp.ayeLaSJ2sT
+# Install script for directory: /home/mwiesent/cs171/CheckAI
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mwiesent/cs171/CheckAI/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

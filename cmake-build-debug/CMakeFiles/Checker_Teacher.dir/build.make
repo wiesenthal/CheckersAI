@@ -63,10 +63,10 @@ RM = /home/mwiesent/CLion/clion-2020.2.4/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /tmp/tmp.ayeLaSJ2sT
+CMAKE_SOURCE_DIR = /home/mwiesent/cs171/CheckAI
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /tmp/tmp.ayeLaSJ2sT/cmake-build-debug
+CMAKE_BINARY_DIR = /home/mwiesent/cs171/CheckAI/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Checker_Teacher.dir/depend.make
@@ -79,107 +79,107 @@ include CMakeFiles/Checker_Teacher.dir/flags.make
 
 CMakeFiles/Checker_Teacher.dir/main.cpp.o: CMakeFiles/Checker_Teacher.dir/flags.make
 CMakeFiles/Checker_Teacher.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Checker_Teacher.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/main.cpp.o -c /tmp/tmp.ayeLaSJ2sT/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mwiesent/cs171/CheckAI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Checker_Teacher.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/main.cpp.o -c /home/mwiesent/cs171/CheckAI/main.cpp
 
 CMakeFiles/Checker_Teacher.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Checker_Teacher.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.ayeLaSJ2sT/main.cpp > CMakeFiles/Checker_Teacher.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mwiesent/cs171/CheckAI/main.cpp > CMakeFiles/Checker_Teacher.dir/main.cpp.i
 
 CMakeFiles/Checker_Teacher.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Checker_Teacher.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.ayeLaSJ2sT/main.cpp -o CMakeFiles/Checker_Teacher.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mwiesent/cs171/CheckAI/main.cpp -o CMakeFiles/Checker_Teacher.dir/main.cpp.s
 
 CMakeFiles/Checker_Teacher.dir/Move.cpp.o: CMakeFiles/Checker_Teacher.dir/flags.make
 CMakeFiles/Checker_Teacher.dir/Move.cpp.o: ../Move.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Checker_Teacher.dir/Move.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/Move.cpp.o -c /tmp/tmp.ayeLaSJ2sT/Move.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mwiesent/cs171/CheckAI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Checker_Teacher.dir/Move.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/Move.cpp.o -c /home/mwiesent/cs171/CheckAI/Move.cpp
 
 CMakeFiles/Checker_Teacher.dir/Move.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Checker_Teacher.dir/Move.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.ayeLaSJ2sT/Move.cpp > CMakeFiles/Checker_Teacher.dir/Move.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mwiesent/cs171/CheckAI/Move.cpp > CMakeFiles/Checker_Teacher.dir/Move.cpp.i
 
 CMakeFiles/Checker_Teacher.dir/Move.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Checker_Teacher.dir/Move.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.ayeLaSJ2sT/Move.cpp -o CMakeFiles/Checker_Teacher.dir/Move.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mwiesent/cs171/CheckAI/Move.cpp -o CMakeFiles/Checker_Teacher.dir/Move.cpp.s
 
 CMakeFiles/Checker_Teacher.dir/Board.cpp.o: CMakeFiles/Checker_Teacher.dir/flags.make
 CMakeFiles/Checker_Teacher.dir/Board.cpp.o: ../Board.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Checker_Teacher.dir/Board.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/Board.cpp.o -c /tmp/tmp.ayeLaSJ2sT/Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mwiesent/cs171/CheckAI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Checker_Teacher.dir/Board.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/Board.cpp.o -c /home/mwiesent/cs171/CheckAI/Board.cpp
 
 CMakeFiles/Checker_Teacher.dir/Board.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Checker_Teacher.dir/Board.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.ayeLaSJ2sT/Board.cpp > CMakeFiles/Checker_Teacher.dir/Board.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mwiesent/cs171/CheckAI/Board.cpp > CMakeFiles/Checker_Teacher.dir/Board.cpp.i
 
 CMakeFiles/Checker_Teacher.dir/Board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Checker_Teacher.dir/Board.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.ayeLaSJ2sT/Board.cpp -o CMakeFiles/Checker_Teacher.dir/Board.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mwiesent/cs171/CheckAI/Board.cpp -o CMakeFiles/Checker_Teacher.dir/Board.cpp.s
 
 CMakeFiles/Checker_Teacher.dir/Checker.cpp.o: CMakeFiles/Checker_Teacher.dir/flags.make
 CMakeFiles/Checker_Teacher.dir/Checker.cpp.o: ../Checker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Checker_Teacher.dir/Checker.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/Checker.cpp.o -c /tmp/tmp.ayeLaSJ2sT/Checker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mwiesent/cs171/CheckAI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Checker_Teacher.dir/Checker.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/Checker.cpp.o -c /home/mwiesent/cs171/CheckAI/Checker.cpp
 
 CMakeFiles/Checker_Teacher.dir/Checker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Checker_Teacher.dir/Checker.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.ayeLaSJ2sT/Checker.cpp > CMakeFiles/Checker_Teacher.dir/Checker.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mwiesent/cs171/CheckAI/Checker.cpp > CMakeFiles/Checker_Teacher.dir/Checker.cpp.i
 
 CMakeFiles/Checker_Teacher.dir/Checker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Checker_Teacher.dir/Checker.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.ayeLaSJ2sT/Checker.cpp -o CMakeFiles/Checker_Teacher.dir/Checker.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mwiesent/cs171/CheckAI/Checker.cpp -o CMakeFiles/Checker_Teacher.dir/Checker.cpp.s
 
 CMakeFiles/Checker_Teacher.dir/Utils.cpp.o: CMakeFiles/Checker_Teacher.dir/flags.make
 CMakeFiles/Checker_Teacher.dir/Utils.cpp.o: ../Utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Checker_Teacher.dir/Utils.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/Utils.cpp.o -c /tmp/tmp.ayeLaSJ2sT/Utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mwiesent/cs171/CheckAI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Checker_Teacher.dir/Utils.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/Utils.cpp.o -c /home/mwiesent/cs171/CheckAI/Utils.cpp
 
 CMakeFiles/Checker_Teacher.dir/Utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Checker_Teacher.dir/Utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.ayeLaSJ2sT/Utils.cpp > CMakeFiles/Checker_Teacher.dir/Utils.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mwiesent/cs171/CheckAI/Utils.cpp > CMakeFiles/Checker_Teacher.dir/Utils.cpp.i
 
 CMakeFiles/Checker_Teacher.dir/Utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Checker_Teacher.dir/Utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.ayeLaSJ2sT/Utils.cpp -o CMakeFiles/Checker_Teacher.dir/Utils.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mwiesent/cs171/CheckAI/Utils.cpp -o CMakeFiles/Checker_Teacher.dir/Utils.cpp.s
 
 CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.o: CMakeFiles/Checker_Teacher.dir/flags.make
 CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.o: ../StudentAI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.o -c /tmp/tmp.ayeLaSJ2sT/StudentAI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mwiesent/cs171/CheckAI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.o -c /home/mwiesent/cs171/CheckAI/StudentAI.cpp
 
 CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.ayeLaSJ2sT/StudentAI.cpp > CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mwiesent/cs171/CheckAI/StudentAI.cpp > CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.i
 
 CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.ayeLaSJ2sT/StudentAI.cpp -o CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mwiesent/cs171/CheckAI/StudentAI.cpp -o CMakeFiles/Checker_Teacher.dir/StudentAI.cpp.s
 
 CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.o: CMakeFiles/Checker_Teacher.dir/flags.make
 CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.o: ../GameLogic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.o -c /tmp/tmp.ayeLaSJ2sT/GameLogic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mwiesent/cs171/CheckAI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.o -c /home/mwiesent/cs171/CheckAI/GameLogic.cpp
 
 CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.ayeLaSJ2sT/GameLogic.cpp > CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mwiesent/cs171/CheckAI/GameLogic.cpp > CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.i
 
 CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.ayeLaSJ2sT/GameLogic.cpp -o CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mwiesent/cs171/CheckAI/GameLogic.cpp -o CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.s
 
 CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.o: CMakeFiles/Checker_Teacher.dir/flags.make
 CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.o: ../ManualAI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.o -c /tmp/tmp.ayeLaSJ2sT/ManualAI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mwiesent/cs171/CheckAI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.o -c /home/mwiesent/cs171/CheckAI/ManualAI.cpp
 
 CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.ayeLaSJ2sT/ManualAI.cpp > CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mwiesent/cs171/CheckAI/ManualAI.cpp > CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.i
 
 CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.ayeLaSJ2sT/ManualAI.cpp -o CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mwiesent/cs171/CheckAI/ManualAI.cpp -o CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.s
 
 # Object files for target Checker_Teacher
 Checker_Teacher_OBJECTS = \
@@ -205,7 +205,7 @@ Checker_Teacher: CMakeFiles/Checker_Teacher.dir/GameLogic.cpp.o
 Checker_Teacher: CMakeFiles/Checker_Teacher.dir/ManualAI.cpp.o
 Checker_Teacher: CMakeFiles/Checker_Teacher.dir/build.make
 Checker_Teacher: CMakeFiles/Checker_Teacher.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/tmp/tmp.ayeLaSJ2sT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Checker_Teacher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mwiesent/cs171/CheckAI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Checker_Teacher"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Checker_Teacher.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -218,6 +218,6 @@ CMakeFiles/Checker_Teacher.dir/clean:
 .PHONY : CMakeFiles/Checker_Teacher.dir/clean
 
 CMakeFiles/Checker_Teacher.dir/depend:
-	cd /tmp/tmp.ayeLaSJ2sT/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/tmp.ayeLaSJ2sT /tmp/tmp.ayeLaSJ2sT /tmp/tmp.ayeLaSJ2sT/cmake-build-debug /tmp/tmp.ayeLaSJ2sT/cmake-build-debug /tmp/tmp.ayeLaSJ2sT/cmake-build-debug/CMakeFiles/Checker_Teacher.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mwiesent/cs171/CheckAI/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mwiesent/cs171/CheckAI /home/mwiesent/cs171/CheckAI /home/mwiesent/cs171/CheckAI/cmake-build-debug /home/mwiesent/cs171/CheckAI/cmake-build-debug /home/mwiesent/cs171/CheckAI/cmake-build-debug/CMakeFiles/Checker_Teacher.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Checker_Teacher.dir/depend
 
