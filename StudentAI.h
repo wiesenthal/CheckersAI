@@ -34,7 +34,7 @@ public:
     virtual Move GetMove(Move board);
 
     const float exploration = 1.5;
-    const float moveTime = 3; // seconds
+    const float moveTime = 1; // seconds
 
     int totalVisitCount = 0;
 
