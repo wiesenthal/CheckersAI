@@ -49,7 +49,7 @@ Move StudentAI::GetMove(Move move)
     //Move res = checker_moves[j];
 
     Node * best = chooseBest(rootState);
-    Move result = best->m;
+    Move result = movePath[best];
     board.makeMove(result,player);
     return result;
 
@@ -123,7 +123,7 @@ Node * StudentAI::select(Node * node) {
     vector<vector<Move>> moves = node->board->getAllPossibleMoves(node->player);
     int newPlayer = node->player == 1 ? 2 : 1;
     for (int i = 0;  i < moves.size(); i++) {
-        for (int j = 0; j < moves[i].size(), j++){
+        for (int j = 0; j < moves[i].size(); j++){
             Board * newBoard = getBoard(*(node->board), moves[i][j], node->player);
             Node * newNode = new Node(newBoard, node, newPlayer);
             if (isRoot)
@@ -153,8 +153,8 @@ Node *StudentAI::chooseBest(Node * node) {
     return bestChild;
 }
 
-Node::Node(Board * board1, Node * parent1, int player1, Move m1) : board(board1), parent(parent1),
-    winValue(0), visitCount(0), player(player1), m(m1)
+Node::Node(Board * board1, Node * parent1, int player1) : board(board1), parent(parent1),
+    winValue(0), visitCount(0), player(player1)
 {}
 
 

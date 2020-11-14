@@ -4,6 +4,7 @@
 #include "Board.h"
 #include "Move.h"
 #include <vector>
+#include <unordered_map>
 
 using namespace std;
 #pragma once
@@ -13,10 +14,9 @@ using namespace std;
 
 class Node {
     public:
-        Node(Board *, Node *, int, Move);
+        Node(Board *, Node *, int player);
         Board * board;
         Node * parent;
-        Move m;
         vector<Node *> children;
         float winValue;
         int visitCount;
@@ -35,6 +35,8 @@ public:
 
     const float exploration = 1;
     const float moveTime = 7; // seconds
+
+    unordered_map<Node *, Move> movePath;
 
     //Our functions
     Node * chooseBest(Node *); //return node at the end of MCTS to make final move
