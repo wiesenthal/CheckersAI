@@ -33,8 +33,8 @@ public:
     StudentAI(int col, int row, int p);
     virtual Move GetMove(Move board);
 
-    const float exploration = 1;
-    const float moveTime = 7; // seconds
+    const float exploration = 1.5;
+    const float moveTime = 3; // seconds
 
     int totalVisitCount = 0;
 

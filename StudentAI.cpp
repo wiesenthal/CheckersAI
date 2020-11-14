@@ -26,6 +26,8 @@ StudentAI::StudentAI(int col,int row,int p)
 //Test- Ludo
 Move StudentAI::GetMove(Move move)
 {
+    totalVisitCount = 0;
+
     if (move.seq.empty())
     {
         player = 1;
@@ -150,7 +152,7 @@ Node *StudentAI::chooseBest(Node * node) {
         {
             continue; //ignore the node, this should never occur however
         }
-        float avgVal = node->winValue / (float) node->visitCount;
+        float avgVal =  node->winValue /(float) node->visitCount;
         if (avgVal > max) {
             max = avgVal;
             bestChild = node->children[i];
