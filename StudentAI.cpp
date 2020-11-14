@@ -37,10 +37,8 @@ Move StudentAI::GetMove(Move move)
         board.makeMove(move,player == 1?2:1);
     }
     //create root
-    cout << player << endl;
     if (player == 1) {
         Node *rootState = new Node(&board, nullptr, player);
-
         time_t startTime = time(nullptr);
         while (time(nullptr) - startTime < moveTime) {
             Node *unexploredLeaf = select(rootState);
@@ -109,8 +107,8 @@ void StudentAI::backpropogate(Node * state, float terminalPlayer) {
 }
 
 Node * StudentAI::getMaxUCB(Node * node) {
-    float max = -(FLT_MAX-100);
-    Node * bestChild = nullptr;
+    float max = -(FLT_MAX-2);
+    Node * bestChild = node;
 
     for (int i = 0; i < node->children.size(); i++) {
         if (node->children[i]->visitCount == 0) //if we find an unexplored node, the UCB is effectively infinite
@@ -131,16 +129,22 @@ Node * StudentAI::select(Node * node) {
     }
 
     //Expand tree
-    if (node->visitCount <= 0) {
+    if (node->visitCount > 0 || !node->parent) {
         bool isRoot = node->parent == nullptr;
         vector <vector<Move>> moves = node->board->getAllPossibleMoves(node->player);
+        if (moves.empty())
+        {
+            return node;
+        }
         int newPlayer = node->player == 1 ? 2 : 1;
         for (int i = 0; i < moves.size(); i++) {
             for (int j = 0; j < moves[i].size(); j++) {
                 Board *newBoard = getBoard(*(node->board), moves[i][j], node->player);
                 Node *newNode = new Node(newBoard, node, newPlayer);
                 if (isRoot)
+                {
                     movePath[newNode] = moves[i][j];
+                }
                 node->children.push_back(newNode);
             }
         }
@@ -154,13 +158,15 @@ Node * StudentAI::select(Node * node) {
 Node *StudentAI::chooseBest(Node * node) {
     float max = 0;
     Node * bestChild;
+    float avgVal;
     for (int i = 0; i < node->children.size(); i++) {
 
         if (node->children[i]->visitCount == 0) //if we find an unexplored node
         {
             continue; //ignore the node, this should never occur however
         }
-        float avgVal =  node->winValue /(float) node->visitCount;
+        avgVal =  node->winValue /(float) node->visitCount;
+        //avgVal = (float) node->visitCount;
         if (avgVal > max) {
             max = avgVal;
             bestChild = node->children[i];
