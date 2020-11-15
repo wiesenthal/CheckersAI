@@ -99,7 +99,7 @@ void StudentAI::backpropogate(Node * state, float terminalPlayer) {
     float score;
     while (state)
     {
-        score = 0 + (terminalPlayer == -1)*0.5 + (terminalPlayer == state->player);
+        score = 0 + (terminalPlayer == -1)*tieWeight + (terminalPlayer == state->player);
         state->winValue += score;
         state->visitCount += 1;
         state = state->parent;
