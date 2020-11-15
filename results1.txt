@@ -1,0 +1,12 @@
+exploration=3 moveTime=1 tieWeight=0.5
+70%
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Tie
+Tie
+Tie
