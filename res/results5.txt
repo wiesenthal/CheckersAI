@@ -1,0 +1,54 @@
+exploration=3; moveTime=0.5; tieWeight=0.1
+Tie: 56%
+Win: 36%
+Loss: 6%
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 2 wins!
+Player 1 wins!
+Player 1 wins!
+Tie
+Tie
+Tie
+Player 1 wins!
+Tie
+Tie
+Player 1 wins!
+Tie
+Player 1 wins!
+Player 1 wins!
+Tie
+Player 1 wins!
+Tie
+Tie
+--------------------------------
+Tie
+Tie
+Tie
+Tie
+Tie
+Player 1 wins!
+Tie
+Tie
+Tie
+Player 1 wins!
+Player 2 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Tie
+Tie
+Tie
+Player 2 wins!
+Tie
+Tie
+Tie
+Tie
+Tie
+Tie
+Tie
+Tie

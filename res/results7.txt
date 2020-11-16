@@ -1,0 +1,55 @@
+exploration=2; moveTime=2; tieWeight=0.25;
+Tie: 50%
+Win: 44%
+Loss: 2%
+SegFault: 4%
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 2 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+--------------------------------
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+--------------------------------
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Tie
+Tie
+Tie
+Player 1 wins!
+Tie
+Tie
+Tie
+Tie
+Player 1 wins!
+Tie
+Tie
+Tie
+Tie
+Tie
+Tie
+Tie
+Tie
+Tie
+Tie
+Player 1 wins!
+Tie
+Tie
+Tie
+Tie
+Tie
+Tie
+Tie
+Tie
