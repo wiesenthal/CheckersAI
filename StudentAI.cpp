@@ -37,24 +37,21 @@ Move StudentAI::GetMove(Move move)
         board.makeMove(move,player == 1?2:1);
     }
     //create root
-    if (player == 1) {
-        Node *rootState = new Node(&board, nullptr, player);
-        time_t startTime = time(nullptr);
-        while (time(nullptr) - startTime < moveTime) {
-            Node *unexploredLeaf = select(rootState);
-            float terminalWin = simulate(unexploredLeaf);
-            backpropogate(unexploredLeaf, terminalWin);
-            totalVisitCount++;
-        }
-
-
-        Node *best = chooseBest(rootState);
-        Move result = movePath[best];
-        board.makeMove(result, player);
-        return result;
+    Node *rootState = new Node(&board, nullptr, player);
+    time_t startTime = time(nullptr);
+    while (time(nullptr) - startTime < moveTime) {
+        Node *unexploredLeaf = select(rootState);
+        float terminalWin = simulate(unexploredLeaf);
+        backpropogate(unexploredLeaf, terminalWin);
+        totalVisitCount++;
     }
 
 
+    Node *best = chooseBest(rootState);
+    Move result = movePath[best];
+    board.makeMove(result, player);
+    return result;
+    /*
     vector<vector<Move>> moves = board.getAllPossibleMoves(player);
     int i = rand() % (moves.size());
     vector<Move> checker_moves = moves[i];
@@ -62,6 +59,7 @@ Move StudentAI::GetMove(Move move)
     Move res = checker_moves[j];
     board.makeMove(res, player);
     return res;
+     */
 
 }
 

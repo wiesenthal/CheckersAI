@@ -33,9 +33,9 @@ public:
     StudentAI(int col, int row, int p);
     virtual Move GetMove(Move board);
 
-    const float exploration = 3;
-    const float moveTime = 1; // seconds
-    const float tieWeight = 0.5; //how much a tie rewards
+    const float exploration = 2;
+    const float moveTime = 2; // seconds
+    const float tieWeight = 0.25; //how much a tie rewards
 
     int totalVisitCount = 0;
 
