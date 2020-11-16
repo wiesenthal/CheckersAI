@@ -1,2 +1,2 @@
 #!/bin/bash
-./commands.sh | ./pout 50
+./commands.sh | ./pout 16
