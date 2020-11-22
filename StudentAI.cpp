@@ -36,22 +36,28 @@ Move StudentAI::GetMove(Move move)
     } else{
         board.makeMove(move,player == 1?2:1);
     }
-    //create root
-    Node *rootState = new Node(&board, nullptr, player);
-    time_t startTime = time(nullptr);
-    while (time(nullptr) - startTime < moveTime) {
-        Node *unexploredLeaf = select(rootState);
-        float terminalWin = simulate(unexploredLeaf);
-        backpropogate(unexploredLeaf, terminalWin);
-        totalVisitCount++;
+
+    if (player == 1)
+    {
+        Node *rootState = new Node(&board, nullptr, player);
+        time_t startTime = time(nullptr);
+        while (time(nullptr) - startTime < moveTime) {
+            Node *unexploredLeaf = select(rootState);
+            float score = simulate(unexploredLeaf);
+            backpropogate(unexploredLeaf, score);
+            totalVisitCount++;
+        }
+
+
+        Node *best = chooseBest(rootState);
+        Move result = movePath[best];
+        board.makeMove(result, player);
+        return result;
     }
 
+    //create root
 
-    Node *best = chooseBest(rootState);
-    Move result = movePath[best];
-    board.makeMove(result, player);
-    return result;
-    /*
+
     vector<vector<Move>> moves = board.getAllPossibleMoves(player);
     int i = rand() % (moves.size());
     vector<Move> checker_moves = moves[i];
@@ -59,7 +65,7 @@ Move StudentAI::GetMove(Move move)
     Move res = checker_moves[j];
     board.makeMove(res, player);
     return res;
-     */
+
 
 }
 
@@ -68,15 +74,51 @@ float StudentAI::simulate(const Node * pickedNode) {
     int currPlayer = pickedNode->player;
     while (board->isWin(currPlayer) == 0) {
         vector<vector<Move>> moves = board->getAllPossibleMoves(currPlayer);
-        // THIS IS NOT TRULY RANDOM, CHANGE SOON
+
+        //getting the best move
+        /*
+        Move best_move = moves[0][0];
+        Board * temp;
+        float min_heuristic = FLT_MAX;
+        float hValue;
+        for (vector<Move> ms : moves)
+        {
+            for (Move m : ms)
+            {
+                temp = getBoard(*board, m, currPlayer);
+                hValue = boardHeuristic(temp, currPlayer);
+                if (hValue < min_heuristic)
+                {
+                    min_heuristic = hValue;
+                    best_move = m;
+                }
+            }
+        }
+        Move pickedMove = best_move;
+         */
+
         int i = rand() % (moves.size());
         vector<Move> checker_moves = moves[i];
         int j = rand() % (checker_moves.size());
         Move pickedMove = checker_moves[j];
+
         board->makeMove(pickedMove,currPlayer);
         currPlayer = currPlayer == 1 ? 2 : 1;
     }
 
+    int p = pickedNode->player;
+    if (p == board->isWin(player))
+    {
+        return (float) board->blackCount + board->whiteCount;
+    }
+    else if (p == -1)
+    {
+        return 0;
+    }
+    else
+    {
+        return - (float) board->blackCount + board->whiteCount;
+    }
     int winner = board->isWin(player);
     return winner;
 }
@@ -93,14 +135,14 @@ float StudentAI::getUCBValue(const Node * state) {
     return avgVal + (exploration*s);
 }
 
-void StudentAI::backpropogate(Node * state, float terminalPlayer) {
-    float score;
+void StudentAI::backpropogate(Node * state, float score) const {
+    int myTurn = 1;
     while (state)
     {
-        score = 0 + (terminalPlayer == -1)*tieWeight + (terminalPlayer == state->player);
-        state->winValue += score;
+        state->winValue += score*myTurn;
         state->visitCount += 1;
         state = state->parent;
+        myTurn *= -1;
     }
 }
 
@@ -154,7 +196,7 @@ Node * StudentAI::select(Node * node) {
 }
 
 Node *StudentAI::chooseBest(Node * node) {
-    float max = 0;
+    float max = -(FLT_MAX-2);
     Node * bestChild;
     float avgVal;
     for (int i = 0; i < node->children.size(); i++) {
@@ -171,6 +213,10 @@ Node *StudentAI::chooseBest(Node * node) {
         }
     }
     return bestChild;
+}
+
+float StudentAI::boardHeuristic(const Board * b, int player) {
+    return (player == 1? (float)b->blackCount : (float)b->whiteCount);
 }
 
 Node::Node(Board * board1, Node * parent1, int player1) : board(board1), parent(parent1),

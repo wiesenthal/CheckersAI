@@ -34,8 +34,8 @@ public:
     virtual Move GetMove(Move board);
 
     const float exploration = 2;
-    const float moveTime = 2; // seconds
-    const float tieWeight = 0.25; //how much a tie rewards
+    const float moveTime = 1; // seconds
+    //const float tieWeight = 0.25; //how much a tie rewards
 
     int totalVisitCount = 0;
 
@@ -48,7 +48,9 @@ public:
 
     float getUCBValue(const Node *); //get the UCB value of one board state
     float simulate(const Node *); // rollout from a leaf node to get to the end with random nodes
-    void backpropogate(Node *, float); // update values from the leaf node up, given the value returned by simulate
+    void backpropogate(Node *, float) const; // update values from the leaf node up, given the value returned by simulate
+
+    float boardHeuristic(const Board *, int); //get heuristic value of a potential board
 
 
 };
