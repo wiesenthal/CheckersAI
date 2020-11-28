@@ -74,7 +74,6 @@ float StudentAI::simulate(const Node * pickedNode) {
     int currPlayer = pickedNode->player;
     while (board->isWin(currPlayer) == 0) {
         vector<vector<Move>> moves = board->getAllPossibleMoves(currPlayer);
-
         //getting the best move
         /*
         Move best_move = moves[0][0];
@@ -96,7 +95,6 @@ float StudentAI::simulate(const Node * pickedNode) {
         }
         Move pickedMove = best_move;
          */
-
         int i = rand() % (moves.size());
         vector<Move> checker_moves = moves[i];
         int j = rand() % (checker_moves.size());
@@ -106,21 +104,22 @@ float StudentAI::simulate(const Node * pickedNode) {
         currPlayer = currPlayer == 1 ? 2 : 1;
     }
 
-    int p = pickedNode->player;
-    if (p == board->isWin(player))
-    {
-        return (float) board->blackCount + board->whiteCount;
-    }
-    else if (p == -1)
-    {
-        return 0;
-    }
-    else
-    {
-        return - (float) board->blackCount + board->whiteCount;
-    }
+//    int p = pickedNode->player;
+//
+//    if (p == board->isWin(player))
+//    {
+//        return (float) board->blackCount + board->whiteCount;
+//    }
+//    else if (p == -1)
+//    {
+//        return 0;
+//    }
+//    else
+//    {
+//        return - (float) board->blackCount + board->whiteCount;
+//    }
     int winner = board->isWin(player);
-    return winner;
+    return (float)winner;
 }
 
 float StudentAI::getUCBValue(const Node * state) {
@@ -139,7 +138,8 @@ void StudentAI::backpropogate(Node * state, float score) const {
     int myTurn = 1;
     while (state)
     {
-        state->winValue += score*myTurn;
+        //state->winValue += score*myTurn;
+        state ->winValue += 0 + ((int)score == -1)*tieWeight + ((int)score != state->player);
         state->visitCount += 1;
         state = state->parent;
         myTurn *= -1;
@@ -195,6 +195,7 @@ Node * StudentAI::select(Node * node) {
 
 }
 
+//comment
 Node *StudentAI::chooseBest(Node * node) {
     float max = -(FLT_MAX-2);
     Node * bestChild;
@@ -205,7 +206,7 @@ Node *StudentAI::chooseBest(Node * node) {
         {
             continue; //ignore the node, this should never occur however
         }
-        avgVal =  node->winValue /(float) node->visitCount;
+        avgVal = (node->children[i])->winValue / (float) (node->children[i])->visitCount;
         //avgVal = (float) node->visitCount;
         if (avgVal > max) {
             max = avgVal;

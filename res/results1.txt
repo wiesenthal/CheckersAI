@@ -1,17 +1,9 @@
-exploration=3; moveTime=1; tieWeight=0.5
-Tie: 52%
-Win: 36%
-Loss: 8%
-Player 2 wins!
-Player 1 wins!
---------------------------------
-Player 1 wins!
-Player 1 wins!
---------------------------------
-Player 1 wins!
-Player 2 wins!
-Player 1 wins!
-Player 1 wins!
+exploration=3; moveTime=2; tieWeight=0.25
+Ties: 31%
+Wins: 64%
+Losses: 3%
+number of segmentation faults: 0
+
 Player 1 wins!
 Player 1 wins!
 Player 1 wins!
@@ -20,25 +12,113 @@ Player 1 wins!
 Player 2 wins!
 Player 1 wins!
 Player 1 wins!
-Player 1 wins!
-Player 1 wins!
-Player 1 wins!
+Player 2 wins!
+Player 2 wins!
 Player 2 wins!
 Player 1 wins!
 Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
 Tie
 Tie
 Tie
 Tie
+Player 1 wins!
+Player 1 wins!
+Tie
+Player 1 wins!
 Tie
 Tie
 Tie
+Player 1 wins!
 Tie
 Tie
 Tie
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Tie
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Tie
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Tie
+Player 1 wins!
+Player 2 wins!
+Player 1 wins!
+Tie
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
 Tie
 Tie
 Tie
+Player 1 wins!
+Player 1 wins!
+Tie
+Player 1 wins!
+Player 1 wins!
+Tie
+Player 1 wins!
+Tie
+Player 1 wins!
+Player 1 wins!
+Tie
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Tie
+Player 1 wins!
+Tie
+Player 1 wins!
+Player 1 wins!
+Tie
+Tie
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Tie
+Player 1 wins!
 Tie
 Tie
 Tie

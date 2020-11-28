@@ -42,6 +42,24 @@ Utils.h
 Move.h
 /home/mwiesent/cs171/CheckAI/Move.h
 
+/home/mwiesent/cs171/CheckAI/GameLogic.cpp
+GameLogic.h
+/home/mwiesent/cs171/CheckAI/GameLogic.h
+
+/home/mwiesent/cs171/CheckAI/GameLogic.h
+AI.h
+/home/mwiesent/cs171/CheckAI/AI.h
+Board.h
+/home/mwiesent/cs171/CheckAI/Board.h
+StudentAI.h
+/home/mwiesent/cs171/CheckAI/StudentAI.h
+ManualAI.h
+/home/mwiesent/cs171/CheckAI/ManualAI.h
+
+/home/mwiesent/cs171/CheckAI/ManualAI.h
+AI.h
+/home/mwiesent/cs171/CheckAI/AI.h
+
 /home/mwiesent/cs171/CheckAI/Move.h
 vector
 -
@@ -85,4 +103,8 @@ map
 -
 string
 -
+
+/home/mwiesent/cs171/CheckAI/main.cpp
+GameLogic.h
+/home/mwiesent/cs171/CheckAI/GameLogic.h
 

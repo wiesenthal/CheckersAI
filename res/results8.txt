@@ -1,51 +1,43 @@
-exploration=2; moveTime=1; tieWeight=0.25
-Ties: 54%
-Wins: 40%
-Losses: 6%
+exploration=5; moveTime=8; tieWeight=0.25
+Ties: 23%
+Wins: 73%
+Losses: 3%
 number of segmentation faults: 0
 
-Player 2 wins!
-Player 1 wins!
-Player 1 wins!
-Player 1 wins!
-Tie
-Tie
-Tie
-Tie
-Player 1 wins!
-Tie
-Player 1 wins!
-Tie
-Tie
-Player 1 wins!
-Player 2 wins!
-Player 1 wins!
-Player 1 wins!
-Player 1 wins!
-Tie
-Player 1 wins!
-Player 1 wins!
-Tie
-Tie
-Tie
-Tie
-Player 1 wins!
-Player 1 wins!
-Tie
-Tie
-Player 2 wins!
-Tie
-Player 1 wins!
-Player 1 wins!
-Player 1 wins!
-Tie
-Tie
 Player 1 wins!
 Player 1 wins!
 Player 2 wins!
 Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
 Tie
-Tie
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
 Player 1 wins!
 Tie
 Tie
@@ -53,32 +45,46 @@ Tie
 Tie
 Tie
 Tie
+Player 1 wins!
+Player 1 wins!
+Tie
+Tie
+Player 1 wins!
+Player 2 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Tie
+Player 1 wins!
+Tie
+Tie
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 2 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
 Player 2 wins!
 Tie
 Tie
 Player 1 wins!
 Player 1 wins!
-Tie
-Player 1 wins!
-Player 1 wins!
-Tie
-Tie
-Tie
-Player 1 wins!
-Tie
-Player 1 wins!
-Tie
-Tie
-Player 1 wins!
-Player 1 wins!
-Tie
-Tie
-Tie
-Tie
-Tie
-Player 2 wins!
-Tie
-Tie
 Player 1 wins!
 Player 1 wins!
 Player 1 wins!
@@ -86,21 +92,43 @@ Tie
 Tie
 Player 1 wins!
 Player 1 wins!
+Player 1 wins!
+Tie
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Tie
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Tie
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Tie
 Tie
 Player 1 wins!
 Player 1 wins!
 Player 1 wins!
 Tie
 Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Player 1 wins!
+Tie
 Tie
 Tie
 Tie
 Player 1 wins!
 Tie
-Tie
-Tie
-Player 1 wins!
-Player 1 wins!
 Tie
 Tie
 Tie
