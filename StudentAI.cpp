@@ -37,8 +37,8 @@ Move StudentAI::GetMove(Move move)
         board.makeMove(move,player == 1?2:1);
     }
 
-    if (player == 1)
-    {
+    //if (player == 1)
+    //{
         Node *rootState = new Node(&board, nullptr, player);
         time_t startTime = time(nullptr);
         while (time(nullptr) - startTime < moveTime) {
@@ -53,11 +53,11 @@ Move StudentAI::GetMove(Move move)
         Move result = movePath[best];
         board.makeMove(result, player);
         return result;
-    }
+    //}
 
     //create root
 
-
+    /*
     vector<vector<Move>> moves = board.getAllPossibleMoves(player);
     int i = rand() % (moves.size());
     vector<Move> checker_moves = moves[i];
@@ -65,6 +65,7 @@ Move StudentAI::GetMove(Move move)
     Move res = checker_moves[j];
     board.makeMove(res, player);
     return res;
+     */
 
 
 }
@@ -104,22 +105,22 @@ float StudentAI::simulate(const Node * pickedNode) {
         currPlayer = currPlayer == 1 ? 2 : 1;
     }
 
-//    int p = pickedNode->player;
-//
-//    if (p == board->isWin(player))
-//    {
-//        return (float) board->blackCount + board->whiteCount;
-//    }
-//    else if (p == -1)
-//    {
-//        return 0;
-//    }
-//    else
-//    {
-//        return - (float) board->blackCount + board->whiteCount;
-//    }
-    int winner = board->isWin(player);
-    return (float)winner;
+    int p = pickedNode->player;
+
+    if (p == board->isWin(player))
+    {
+        return (float) board->blackCount + board->whiteCount;
+    }
+    else if (p == -1)
+    {
+        return 0;
+    }
+    else
+    {
+        return - (float) board->blackCount + board->whiteCount;
+    }
+//    int winner = board->isWin(player);
+//    return (float)winner;
 }
 
 float StudentAI::getUCBValue(const Node * state) {
@@ -135,11 +136,11 @@ float StudentAI::getUCBValue(const Node * state) {
 }
 
 void StudentAI::backpropogate(Node * state, float score) const {
-    int myTurn = 1;
+    int myTurn = -1;
     while (state)
     {
-        //state->winValue += score*myTurn;
-        state ->winValue += 0 + ((int)score == -1)*tieWeight + ((int)score != state->player);
+        state->winValue += score*myTurn;
+        //state ->winValue += 0 + ((int)score == -1)*tieWeight + ((int)score != state->player);
         state->visitCount += 1;
         state = state->parent;
         myTurn *= -1;
