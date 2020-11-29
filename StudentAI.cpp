@@ -106,14 +106,15 @@ float StudentAI::simulate(const Node * pickedNode) {
     }
 
     int p = pickedNode->player;
+    int vc = board->isWin(player);
 
-    if (p == board->isWin(player))
+    if (p == vc)
     {
         return (float) board->blackCount + board->whiteCount;
     }
-    else if (p == -1)
+    if (vc == -1)
     {
-        return 0;
+        return tieWeight;
     }
     else
     {
