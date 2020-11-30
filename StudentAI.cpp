@@ -52,6 +52,9 @@ Move StudentAI::GetMove(Move move)
         Node *best = chooseBest(rootState);
         Move result = movePath[best];
         board.makeMove(result, player);
+
+        //Cleanup
+        destroyTree(rootState);
         return result;
     //}
 
@@ -107,10 +110,15 @@ float StudentAI::simulate(const Node * pickedNode) {
 
     int p = pickedNode->player;
     int vc = board->isWin(player);
+    float blackCount = board->blackCount;
+    float whiteCount = board->whiteCount;
+    delete board;
+
+
 
     if (p == vc)
     {
-        return (float) board->blackCount + board->whiteCount;
+        return blackCount + whiteCount;
     }
     if (vc == -1)
     {
@@ -118,7 +126,7 @@ float StudentAI::simulate(const Node * pickedNode) {
     }
     else
     {
-        return - (float) board->blackCount + board->whiteCount;
+        return -(blackCount + whiteCount);
     }
 //    int winner = board->isWin(player);
 //    return (float)winner;
@@ -220,6 +228,15 @@ Node *StudentAI::chooseBest(Node * node) {
 
 float StudentAI::boardHeuristic(const Board * b, int player) {
     return (player == 1? (float)b->blackCount : (float)b->whiteCount);
+}
+
+
+void destroyTree(Node * node) {
+    for (int i = 0; i < node->children.size(); i ++) {
+        destroyTree(node->children[i]);
+    }
+    delete node->board;
+    delete node;
 }
 
 Node::Node(Board * board1, Node * parent1, int player1) : board(board1), parent(parent1),

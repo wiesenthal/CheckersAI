@@ -33,7 +33,7 @@ public:
     StudentAI(int col, int row, int p);
     virtual Move GetMove(Move board);
 
-    const float exploration = 5;
+    const float exploration = 2;
     const float moveTime = 2; // seconds
     const float tieWeight = 0.25; //how much a tie rewards
 
@@ -51,6 +51,7 @@ public:
     void backpropogate(Node *, float) const; // update values from the leaf node up, given the value returned by simulate
 
     float boardHeuristic(const Board *, int); //get heuristic value of a potential board
+    void destroyTree(Node *); //Free memory for all nodes in tree
 
 
 };
