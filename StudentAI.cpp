@@ -232,9 +232,16 @@ float StudentAI::boardHeuristic(const Board * b, int player) {
 
 
 void destroyTree(Node * node) {
+    //This should never happen
+    if ( (node == nullptr) || (node == NULL)) {
+        return;
+    }
+
     for (int i = 0; i < node->children.size(); i ++) {
         destroyTree(node->children[i]);
     }
+
+    //node is a leaf, time to destroy it
     delete node->board;
     delete node;
 }
