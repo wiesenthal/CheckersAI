@@ -76,29 +76,38 @@ Move StudentAI::GetMove(Move move)
 float StudentAI::simulate(const Node * pickedNode) {
     Board * board = new Board(*(pickedNode->board));
     int currPlayer = pickedNode->player;
+
     while (board->isWin(currPlayer) == 0) {
         vector<vector<Move>> moves = board->getAllPossibleMoves(currPlayer);
-        //getting the best move
-        /*
-        Move best_move = moves[0][0];
-        Board * temp;
+        //getting the best move using hueristic
+        Move bestMove;
         float min_heuristic = FLT_MAX;
-        float hValue;
+
         for (vector<Move> ms : moves)
         {
             for (Move m : ms)
             {
-                temp = getBoard(*board, m, currPlayer);
-                hValue = boardHeuristic(temp, currPlayer);
+                float hValue;
+                Board * temp = getBoard(*board, m, currPlayer);
+                temp->makeMove(m, currPlayer);
+
+                //hValue is how many peices opponent has, we want to minimize
+                hValue = boardHeuristic(temp, currPlayer, false);
                 if (hValue < min_heuristic)
                 {
                     min_heuristic = hValue;
-                    best_move = m;
+                    bestMove = m;
                 }
+                delete temp;
             }
         }
-        Move pickedMove = best_move;
-         */
+        //Make the best huerstical move
+        board->makeMove(bestMove,currPlayer);
+        currPlayer = currPlayer == 1 ? 2 : 1;
+
+
+        //Pick random move
+        /*
         int i = rand() % (moves.size());
         vector<Move> checker_moves = moves[i];
         int j = rand() % (checker_moves.size());
@@ -106,19 +115,20 @@ float StudentAI::simulate(const Node * pickedNode) {
 
         board->makeMove(pickedMove,currPlayer);
         currPlayer = currPlayer == 1 ? 2 : 1;
+
+        */
     }
 
     int p = pickedNode->player;
     int vc = board->isWin(player);
-    float blackCount = board->blackCount;
-    float whiteCount = board->whiteCount;
+    float heuristic =  boardHeuristic(board, p, true);
     delete board;
 
 
 
     if (p == vc)
     {
-        return blackCount + whiteCount;
+        return heuristic;
     }
     if (vc == -1)
     {
@@ -126,10 +136,8 @@ float StudentAI::simulate(const Node * pickedNode) {
     }
     else
     {
-        return -(blackCount + whiteCount);
+        return -(heuristic);
     }
-//    int winner = board->isWin(player);
-//    return (float)winner;
 }
 
 float StudentAI::getUCBValue(const Node * state) {
@@ -148,7 +156,7 @@ void StudentAI::backpropogate(Node * state, float score) const {
     int myTurn = -1;
     while (state)
     {
-        state->winValue += score*myTurn;
+        state->winValue += score * (score == tieWeight ? 1 : myTurn);
         //state ->winValue += 0 + ((int)score == -1)*tieWeight + ((int)score != state->player);
         state->visitCount += 1;
         state = state->parent;
@@ -226,12 +234,33 @@ Node *StudentAI::chooseBest(Node * node) {
     return bestChild;
 }
 
-float StudentAI::boardHeuristic(const Board * b, int player) {
-    return (player == 1? (float)b->blackCount : (float)b->whiteCount);
+float StudentAI::boardHeuristic(const Board * b, int player, bool isEndState) {
+    float player1Score = 0;
+    float player2Score = 0;
+
+
+    for (vector<Checker> checkers : b->board) {
+        for (Checker checker : checkers) {
+            int totalRows = b->row - 1;
+
+            if (checker.color == "Black") {
+                player1Score += 5 + (player == 1 ? checker.row : -(checker.row-totalRows)) + (checker.isKing ? 2 : 0)
+            } else {
+                player1Score += 5 + (player == 2 ? checker.row : -(checker.row-totalRows)) + (checker.isKing ? 2 : 0)
+            }
+        }
+    }
+
+
+    if (isEndState) {
+        return player1Score + player2Score;
+    }
+
+    return (player == 1) ? player1Score: player2Score;
 }
 
 
-void destroyTree(Node * node) {
+void StudentAI::destroyTree(Node * node) {
     //This should never happen
     if ( (node == nullptr) || (node == NULL)) {
         return;
@@ -242,7 +271,9 @@ void destroyTree(Node * node) {
     }
 
     //node is a leaf, time to destroy it
-    delete node->board;
+    if (node->parent != nullptr) {
+        delete node->board;
+    }
     delete node;
 }
 
