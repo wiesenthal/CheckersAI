@@ -244,9 +244,9 @@ float StudentAI::boardHeuristic(const Board * b, int player, bool isEndState) {
             int totalRows = b->row - 1;
 
             if (checker.color == "Black") {
-                player1Score += 5 + (player == 1 ? checker.row : -(checker.row-totalRows)) + (checker.isKing ? 2 : 0)
+                player1Score += 5 + (player == 1 ? checker.row : -(checker.row-totalRows)) + (checker.isKing ? 2 : 0);
             } else {
-                player1Score += 5 + (player == 2 ? checker.row : -(checker.row-totalRows)) + (checker.isKing ? 2 : 0)
+                player1Score += 5 + (player == 2 ? checker.row : -(checker.row-totalRows)) + (checker.isKing ? 2 : 0);
             }
         }
     }
