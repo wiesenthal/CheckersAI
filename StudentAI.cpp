@@ -89,7 +89,6 @@ float StudentAI::simulate(const Node * pickedNode) {
             {
                 float hValue;
                 Board * temp = getBoard(*board, m, currPlayer);
-                temp->makeMove(m, currPlayer);
 
                 //hValue is how many peices opponent has, we want to minimize
                 hValue = boardHeuristic(temp, currPlayer, false);
@@ -243,10 +242,10 @@ float StudentAI::boardHeuristic(const Board * b, int player, bool isEndState) {
         for (Checker checker : checkers) {
             int totalRows = b->row - 1;
 
-            if (checker.color == "Black") {
+            if (checker.color == "B") {
                 player1Score += 5 + (player == 1 ? checker.row : -(checker.row-totalRows)) + (checker.isKing ? 2 : 0);
-            } else {
-                player1Score += 5 + (player == 2 ? checker.row : -(checker.row-totalRows)) + (checker.isKing ? 2 : 0);
+            } else if (checker.color == "W") {
+                player2Score += 5 + (player == 2 ? checker.row : -(checker.row-totalRows)) + (checker.isKing ? 2 : 0);
             }
         }
     }
