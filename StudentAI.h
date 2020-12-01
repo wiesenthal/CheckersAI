@@ -50,7 +50,7 @@ public:
     float simulate(const Node *); // rollout from a leaf node to get to the end with random nodes
     void backpropogate(Node *, float) const; // update values from the leaf node up, given the value returned by simulate
 
-    float boardHeuristic(const Board *, int, bool); //get heuristic value of a potential board
+    float boardHeuristic(const Board *, int, bool); //get heuristic value of board state
     void destroyTree(Node *); //Free memory for all nodes in tree
 
 
