@@ -81,7 +81,7 @@ float StudentAI::simulate(const Node * pickedNode) {
         vector<vector<Move>> moves = board->getAllPossibleMoves(currPlayer);
         //getting the best move using hueristic
         Move bestMove;
-        float min_heuristic = FLT_MAX;
+        float maxHeuristic = -(FLT_MAX-2);
 
         for (vector<Move> ms : moves)
         {
@@ -92,9 +92,9 @@ float StudentAI::simulate(const Node * pickedNode) {
 
                 //hValue is how many peices opponent has, we want to minimize
                 hValue = boardHeuristic(temp, currPlayer, false);
-                if (hValue < min_heuristic)
+                if (hValue > maxHeuristic)
                 {
-                    min_heuristic = hValue;
+                    maxHeuristic = hValue;
                     bestMove = m;
                 }
                 delete temp;
