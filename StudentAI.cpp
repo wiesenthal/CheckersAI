@@ -3,6 +3,10 @@
 #include <cmath>
 #include <ctime>
 #include <cfloat>
+#include <sstream>
+#include <fstream>
+#include <iostream>
+#include <string>
 
 //The following part should be completed by students.
 //The students can modify anything except the class name and exisiting functions and varibles.
@@ -21,6 +25,25 @@ StudentAI::StudentAI(int col,int row,int p)
     board = Board(col,row,p);
     board.initializeGame();
     player = 2;
+    /*
+    fstream paramsfile;
+    paramsfile.open("params.tsv",ios::in);
+    string o;
+    getline(paramsfile, o);
+
+    istringstream ss(o);
+    string w;
+    ss >> w;
+    exploration = stof(w);
+    ss >> w;
+    moveTime = stof(w); // seconds
+    ss >> w;
+    tieWeight = stof(w);
+     */
+    exploration = 250;
+    moveTime = 20;
+    tieWeight = 0.3;
+
 }
 
 //Test- Ludo
@@ -71,6 +94,7 @@ Move StudentAI::GetMove(Move move)
      */
 
 
+
 }
 
 float StudentAI::simulate(const Node * pickedNode) {
@@ -90,7 +114,6 @@ float StudentAI::simulate(const Node * pickedNode) {
                 float hValue;
                 Board * temp = getBoard(*board, m, currPlayer);
 
-                //hValue is how many peices opponent has, we want to minimize
                 hValue = boardHeuristic(temp, currPlayer, false);
                 if (hValue > maxHeuristic)
                 {
@@ -243,9 +266,9 @@ float StudentAI::boardHeuristic(const Board * b, int player, bool isEndState) {
             int totalRows = b->row - 1;
 
             if (checker.color == "B") {
-                player1Score += 5 + (player == 1 ? checker.row : -(checker.row-totalRows)) + (checker.isKing ? 2 : 0);
+                player1Score += 5 + (checker.row) + (checker.isKing ? 2 : 0);
             } else if (checker.color == "W") {
-                player2Score += 5 + (player == 2 ? checker.row : -(checker.row-totalRows)) + (checker.isKing ? 2 : 0);
+                player2Score += 5 + (-(checker.row-totalRows)) + (checker.isKing ? 2 : 0);
             }
         }
     }
@@ -254,7 +277,7 @@ float StudentAI::boardHeuristic(const Board * b, int player, bool isEndState) {
     if (isEndState) {
         return player1Score + player2Score;
     }
-
+    //try subtraction
     return (player == 1) ? player1Score: player2Score;
 }
 
