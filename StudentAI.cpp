@@ -25,25 +25,6 @@ StudentAI::StudentAI(int col,int row,int p)
     board = Board(col,row,p);
     board.initializeGame();
     player = 2;
-    /*
-    fstream paramsfile;
-    paramsfile.open("params.tsv",ios::in);
-    string o;
-    getline(paramsfile, o);
-
-    istringstream ss(o);
-    string w;
-    ss >> w;
-    exploration = stof(w);
-    ss >> w;
-    moveTime = stof(w); // seconds
-    ss >> w;
-    tieWeight = stof(w);
-     */
-    exploration = 250;
-    moveTime = 20;
-    tieWeight = 0.3;
-
 }
 
 //Test- Ludo
@@ -60,18 +41,18 @@ Move StudentAI::GetMove(Move move)
         board.makeMove(move,player == 1?2:1);
     }
 
-    //if (player == 1)
-    //{
+    if (player == 1)
+    {
         Node *rootState = new Node(&board, nullptr, player);
         time_t startTime = time(nullptr);
-        while (time(nullptr) - startTime < moveTime) {
+        while ((time(nullptr) - startTime) < moveTime) {
             Node *unexploredLeaf = select(rootState);
             float score = simulate(unexploredLeaf);
             backpropogate(unexploredLeaf, score);
             totalVisitCount++;
         }
 
-
+        cout << totalVisitCount << endl;
         Node *best = chooseBest(rootState);
         Move result = movePath[best];
         board.makeMove(result, player);
@@ -79,11 +60,11 @@ Move StudentAI::GetMove(Move move)
         //Cleanup
         destroyTree(rootState);
         return result;
-    //}
+    }
 
     //create root
 
-    /*
+
     vector<vector<Move>> moves = board.getAllPossibleMoves(player);
     int i = rand() % (moves.size());
     vector<Move> checker_moves = moves[i];
@@ -91,7 +72,7 @@ Move StudentAI::GetMove(Move move)
     Move res = checker_moves[j];
     board.makeMove(res, player);
     return res;
-     */
+
 
 
 
@@ -112,15 +93,17 @@ float StudentAI::simulate(const Node * pickedNode) {
             for (Move m : ms)
             {
                 float hValue;
-                Board * temp = getBoard(*board, m, currPlayer);
+                board->makeMove(m,currPlayer);
 
-                hValue = boardHeuristic(temp, currPlayer, false);
+
+                //hValue is how many peices you have, we want to maximize
+                hValue = boardHeuristic(board, currPlayer, false);
                 if (hValue > maxHeuristic)
                 {
                     maxHeuristic = hValue;
                     bestMove = m;
                 }
-                delete temp;
+                board->Undo();
             }
         }
         //Make the best huerstical move
