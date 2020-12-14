@@ -41,8 +41,8 @@ Move StudentAI::GetMove(Move move)
         board.makeMove(move,player == 1?2:1);
     }
 
-    if (player == 1)
-    {
+//    if (player == 1)
+//    {
         Node *rootState = new Node(&board, nullptr, player);
         time_t startTime = time(nullptr);
         while ((time(nullptr) - startTime) < moveTime) {
@@ -52,7 +52,6 @@ Move StudentAI::GetMove(Move move)
             totalVisitCount++;
         }
 
-        cout << totalVisitCount << endl;
         Node *best = chooseBest(rootState);
         Move result = movePath[best];
         board.makeMove(result, player);
@@ -60,18 +59,16 @@ Move StudentAI::GetMove(Move move)
         //Cleanup
         destroyTree(rootState);
         return result;
-    }
+//    }
 
-    //create root
-
-
-    vector<vector<Move>> moves = board.getAllPossibleMoves(player);
-    int i = rand() % (moves.size());
-    vector<Move> checker_moves = moves[i];
-    int j = rand() % (checker_moves.size());
-    Move res = checker_moves[j];
-    board.makeMove(res, player);
-    return res;
+    //random move
+//    vector<vector<Move>> moves = board.getAllPossibleMoves(player);
+//    int i = rand() % (moves.size());
+//    vector<Move> checker_moves = moves[i];
+//    int j = rand() % (checker_moves.size());
+//    Move res = checker_moves[j];
+//    board.makeMove(res, player);
+//    return res;
 
 
 
@@ -87,41 +84,39 @@ float StudentAI::simulate(const Node * pickedNode) {
         //getting the best move using hueristic
         Move bestMove;
         float maxHeuristic = -(FLT_MAX-2);
+/*
+        if ((rand() % 100) < 25) {
+            for (vector <Move> ms : moves) {
+                for (Move m : ms) {
+                    float hValue;
+                    board->makeMove(m, currPlayer);
 
-        for (vector<Move> ms : moves)
-        {
-            for (Move m : ms)
-            {
-                float hValue;
-                board->makeMove(m,currPlayer);
 
-
-                //hValue is how many peices you have, we want to maximize
-                hValue = boardHeuristic(board, currPlayer, false);
-                if (hValue > maxHeuristic)
-                {
-                    maxHeuristic = hValue;
-                    bestMove = m;
+                    //hValue is how many peices you have, we want to maximize
+                    hValue = boardHeuristic(board, currPlayer, false);
+                    if (hValue > maxHeuristic) {
+                        maxHeuristic = hValue;
+                        bestMove = m;
+                    }
+                    board->Undo();
                 }
-                board->Undo();
             }
-        }
-        //Make the best huerstical move
-        board->makeMove(bestMove,currPlayer);
-        currPlayer = currPlayer == 1 ? 2 : 1;
-
-
-        //Pick random move
-        /*
-        int i = rand() % (moves.size());
-        vector<Move> checker_moves = moves[i];
-        int j = rand() % (checker_moves.size());
-        Move pickedMove = checker_moves[j];
-
-        board->makeMove(pickedMove,currPlayer);
-        currPlayer = currPlayer == 1 ? 2 : 1;
-
+            //Make the best huerstical move
+            board->makeMove(bestMove, currPlayer);
+            currPlayer = currPlayer == 1 ? 2 : 1;
+        } else {
         */
+            //Pick random move
+            int i = rand() % (moves.size());
+            vector<Move> checker_moves = moves[i];
+            int j = rand() % (checker_moves.size());
+            Move pickedMove = checker_moves[j];
+
+            board->makeMove(pickedMove,currPlayer);
+            currPlayer = currPlayer == 1 ? 2 : 1;
+        //}
+
+
     }
 
     int p = pickedNode->player;
@@ -133,7 +128,7 @@ float StudentAI::simulate(const Node * pickedNode) {
 
     if (p == vc)
     {
-        return heuristic;
+        return 1;//heuristic;
     }
     if (vc == -1)
     {
@@ -141,7 +136,7 @@ float StudentAI::simulate(const Node * pickedNode) {
     }
     else
     {
-        return -(heuristic);
+        return -1;//-(heuristic);
     }
 }
 
@@ -154,7 +149,7 @@ float StudentAI::getUCBValue(const Node * state) {
     float avgVal = state->winValue / (float) state->visitCount;
     float s = sqrt(log((float)state->parent->visitCount)/(float)state->visitCount);
 
-    return avgVal + (exploration*s);
+    return avgVal + (exploration*s);// + (state->hValue/state->visitCount);
 }
 
 void StudentAI::backpropogate(Node * state, float score) const {
@@ -174,8 +169,7 @@ Node * StudentAI::getMaxUCB(Node * node) {
     Node * bestChild = node;
 
     for (int i = 0; i < node->children.size(); i++) {
-        if (node->children[i]->visitCount == 0) //if we find an unexplored node, the UCB is effectively infinite
-        {
+        if (node->children[i]->visitCount == 0) {
             return node->children[i];
         }
         if (getUCBValue(node->children[i]) > max) {
@@ -209,6 +203,7 @@ Node * StudentAI::select(Node * node) {
                     movePath[newNode] = moves[i][j];
                 }
                 node->children.push_back(newNode);
+                //newNode->hValue = boardHeuristic(newBoard, node->player, false);
             }
         }
         return getMaxUCB(node);

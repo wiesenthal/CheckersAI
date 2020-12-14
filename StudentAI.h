@@ -21,6 +21,7 @@ class Node {
         float winValue;
         int visitCount;
         int player;
+        float hValue;
 
 };
 
@@ -33,8 +34,8 @@ public:
     StudentAI(int col, int row, int p);
     virtual Move GetMove(Move board);
 
-    const float exploration = 250;
-    const float moveTime = 20; // seconds
+    const float exploration = 3;
+    const float moveTime = 18; // seconds per move
     const float tieWeight = 0; //how much a tie rewards
 
     int totalVisitCount = 0;
